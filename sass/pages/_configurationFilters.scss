@@ -1,0 +1,28 @@
+@use './../abtracts'as *;
+
+.configurationFilters{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 60px;
+    position: relative;
+    &__row{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;   
+        width: 100%;     
+        & h4{
+            font-size: 1.5rem;
+            width: 100px;
+        }
+    }
+    &__input{
+        margin-left: 25px;
+        width: 52.5%;
+    }
+    &__buttons{
+        bottom: -50px;        
+        position: absolute;
+        right: 0;
+    }
+}

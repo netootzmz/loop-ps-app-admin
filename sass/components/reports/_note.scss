@@ -1,0 +1,102 @@
+@use './../../abtracts'as *;
+
+.note {
+  display: flex;
+  border-radius: 3px;
+  margin: 2%;
+  background: $color-white;
+  padding: 1.5rem;
+  flex-direction: column;
+
+  &__image {
+    padding-bottom: 2rem;
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+
+  }
+
+  &__line {
+    padding: .2rem;
+    background: linear-gradient(to right, #fdc32e, #fd5846, #ea2f77, #a51fb5);
+  }
+
+  &__amount {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 3px solid rgba(207, 204, 202, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__sale {
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    &--light {
+      float: right;
+    }
+  }
+
+  &__total {
+    font-size: 2rem;
+    font-weight: 400;
+
+    &--light {
+      float: right;
+    }
+  }
+
+  &__status {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  &__body {
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    &--light {
+      float: right;
+      font-weight: 600;
+    }
+  }
+
+  &__info {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #9f1914;
+    font-style: italic;
+  }
+
+  &__lineEnd {
+    padding: .2rem;
+    background: linear-gradient(to right, #a51fb5, #ea2f77, #fd5846, #fdc32e);
+  }
+
+  &__footer{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    &--text{
+      color: black;
+    }
+  }
+
+}

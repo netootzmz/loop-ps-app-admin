@@ -1,0 +1,58 @@
+@use './../abtracts'as *;
+
+.dropdown {
+  position       : relative;
+  min-width      : 32rem;
+  display        : flex;
+  justify-content: center;
+
+  &__container {
+    width   : 100%;
+    position: absolute;
+    bottom  : 0;
+    top     : 0;
+    z-index : 1500;
+  }
+
+  &__button {
+    cursor : pointer;
+    display: flex;
+  }
+
+  &__background {
+    position  : fixed;
+    height    : 100vh;
+    left      : 0;
+    top       : 0;
+    width     : 100vw;
+    z-index   : 1000;
+    display   : block;
+    background: rgba($color-grey-dark, .3);
+    cursor    : default;
+  }
+
+  &__menu {
+    color         : $color-primary;
+    list-style    : none;
+    display       : flex;
+    flex-direction: column;
+    padding       : 3rem 2rem;
+    background    : $color-white;
+    width         : 85%;
+    overflow      : hidden;
+    z-index       : 2000;
+    transform     : translateY(33%);
+    height        : auto;
+    margin        : 0 auto;
+  }
+
+  &__item {
+    font-size  : $default-font-size;
+    font-weight: 500;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+}

@@ -1,0 +1,128 @@
+@use './../abtracts'as *;
+
+.registerAdjust{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 35% 20% 35% 10%;
+    grid-template-rows: repeat(2, 60px) 40px 60px;
+    height: min-content;
+    margin-bottom: 5%;
+    position: relative;
+    &__row{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;        
+        & h4{
+            font-size: 1.5rem;
+            width: 100px;
+        }
+    }
+    &__actions{
+        margin: 0 10px;
+        grid-column-gap: 15px;
+        & button{
+            padding: 10px 0;
+            width: 100%;
+        }
+    }
+    &__input{
+        margin-left: 25px;
+        width: 52.5%;
+    }
+    &__selector{
+        width: 65%;
+    }
+    &__type{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    &__actionType{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    &__category{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    &__actionCategory{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    &__actionDelete{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    &__status{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    &__name{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    &__nature{
+        grid-column: 3;
+        grid-row: 2;
+    }
+    &__buttons{
+        bottom: -60px;
+        position: absolute;
+        right: 0;
+    }
+    &__table{
+        display: flex;
+        justify-content: center;
+        width: 100%;        
+    }
+    &__modal{
+        align-items: center;
+        display: flex;
+        height: 50%;
+        justify-content: center;
+        position: absolute;
+        top: -5%;
+        left: 15%;
+        width: 500px;
+        z-index: 1001;
+        &__header{
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            &_left{
+                align-items: center;
+                display: flex;                
+                width: 50%;
+                &_text{
+                    margin-left: 15px;
+                }
+            }
+        }
+    }
+    &__nameCategory{
+        border: none !important;
+        border-bottom: 1px solid $color-primary !important;
+        box-shadow: none !important;
+        color: $color-primary !important;
+        font-size: 12px !important;
+        margin-left: 30px !important;
+        margin-bottom: 15px !important;
+        margin-top: 35px !important;
+        outline: none !important;
+        padding-bottom: 10px !important;
+        width: 80% !important;
+        &:focus{
+            outline: none !important;
+        }
+        &_container{
+            position: relative;
+        }
+        &_tag{
+            color: $color-secondary;
+            font-size: 10px;
+            left: 0;
+            position: absolute;
+            top: 10px;
+        }
+    }
+}

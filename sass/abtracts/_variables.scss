@@ -1,0 +1,32 @@
+// Typography
+$default-font-family: "roboto", sans-serif;
+
+// Font sizes
+$default-font-size: 1.5rem;
+$table-head-font-size: 1.8rem;
+$menu-head-font-size: 2rem;
+$menu-item-font-size: 1.8rem;
+$title-item-font-size: 3rem;
+$title2-item-font-size: 2.5rem;
+
+// Colors
+$color-primary: #354a5e;
+$color-secondary: #f2711c;
+$color-grey-light: #efefef;
+$color-grey-dark: #ababab;
+$color-error: #cb1414;
+$color-success: #14cb1a;
+$color-white: #ffffff;
+$color-yellow: #ffd523;
+
+.color-primary {
+  color: $color-primary;
+}
+
+.color-secondary {
+  color: $color-secondary;
+}
+
+//Shadows
+$light-shadow: 0px 2px 6px 2px rgba(#000, 0.2);
+$emphasys-shadow: 0px 3px 8px 4px rgba(#000, 0.2);

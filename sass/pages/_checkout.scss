@@ -1,0 +1,319 @@
+@use "./../abtracts"as *;
+
+.checkout {
+  display              : grid;
+  grid-column          : 2 / -1;
+  grid-row             : 2 / -1;
+  grid-template-columns: 70%;
+  justify-content      : center;
+  overflow-x: hidden;
+  overflow-y: auto;
+  grid-template-rows: max-content;
+
+  @include respond (tab-land) {
+    grid-template-columns: 100%;
+  }
+
+  @include respond (big-desktop) {
+    grid-template-columns: 60%;
+  }
+
+  &__container {
+    background           : $color-primary;
+    display              : grid;
+    grid-template-columns: 40% 1fr;
+    padding              : 3rem;
+    grid-template-rows: max-content;
+
+    @include respond (tab-port) {
+      padding              : 3rem 0;
+      grid-template-columns: 100%;
+      grid-template-rows   : 20%;
+    }
+
+    @include respond (phone) {
+      grid-template-rows: 15%;
+    }
+  }
+
+  &__smart {
+    display              : grid;
+    grid-template-columns: 40% 1fr;
+    padding              : 3rem;
+    grid-template-rows   : max-content;
+
+    @include respond (tab-port) {
+      padding              : 3rem 0;
+      grid-template-columns: 100%;
+      grid-template-rows   : 20%;
+    }
+
+    @include respond (phone) {
+      grid-template-rows: 35%;
+    }
+  }
+
+  &__details {
+    font-size    : $default-font-size;
+    padding      : 3rem 3rem 3rem 0;
+    display      : grid;
+    grid-template-rows: max-content min-content;
+
+
+    @include respond (tab-port) {
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows   : repeat(2, 50%);
+      align-items          : center;
+      padding              : 1rem 0;
+      padding-bottom       : 3rem;
+    }
+
+    @include respond (phone) {
+      grid-template-columns: 1fr;
+      grid-template-rows   : repeat(2, min-content) 1fr;
+    }
+  }
+
+  &__title {
+    font-size    : 3.5rem;
+    line-height  : 1;
+    margin-bottom: .5rem;
+
+    @include respond (tab-port) {
+      grid-column: 1 / 2;
+      align-self : end;
+      text-align : center;
+    }
+
+    @include respond (phone) {
+      text-align: left;
+      padding   : 1rem 5rem;
+    }
+
+    &--info {
+      margin     : 2rem 0;
+      font-size  : 1.7rem;
+      font-weight: 500;
+    }
+  }
+
+  &__processed {
+    display                : inline-block;
+    text-align             : center;
+    justify-content        : center !important;
+    color                  : white;
+    background-color       : $color-primary;
+    border-top-left-radius : 10px;
+    border-top-right-radius: 10px;
+  }
+
+  &__address {
+    margin-bottom: 1.5rem;
+    line-height  : 1.4;
+    font-weight  : 400;
+
+    @include respond (tab-port) {
+      grid-column: 1 / 2;
+      align-self : start;
+      text-align : center;
+    }
+
+    @include respond (phone) {
+      text-align    : left;
+      padding       : 1rem 5rem;
+      padding-bottom: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    @include respond (tab-port) {
+      grid-column: 2 / 3;
+      grid-row   : 1 / -1;
+      padding    : 5rem;
+      border-left: 1px solid $color-grey-light;
+    }
+
+    @include respond (phone) {
+      grid-column: 1 / -1;
+      grid-row   : 3 / -1;
+      padding    : 1rem 5rem;
+      padding-top: 0;
+      border-left: 0;
+    }
+  }
+
+  &__payment {
+    list-style   : none;
+    width        : 40%;
+    margin       : 0 auto;
+    border-radius: 10px;
+    border       : 1px solid $color-grey-dark;
+
+    @include respond (tab-port) {
+      grid-column: 2 / 3;
+      grid-row   : 1 / -1;
+      border-left: 1px solid $color-grey-light;
+    }
+
+    @include respond (phone) {
+      grid-column   : 1 / -1;
+      grid-row      : 3 / -1;
+      // padding    : 1rem 5rem;
+      padding-top   : 0;
+    }
+  }
+
+  &__pay--data {
+    padding-left: 5px !important;
+
+    @include respond (tab-port) {
+      flex-wrap: wrap;
+      padding  : 0;
+    }
+
+    // @include respond (phone) {
+    //   grid-column: 1 / -1;
+    //   grid-row   : 3 / -1;
+    //   padding    : 1rem 5rem;
+    //   padding-top: 0;
+    // }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($color-grey-dark, .4);
+    }
+  }
+
+
+  &__item {
+    padding        : 1rem 2rem 1rem 0;
+    display        : flex;
+    width          : 100%;
+    justify-content: space-between;
+
+    & b {
+      font-weight: 400;
+    }
+
+    &--title {
+      font-weight: 500;
+      font-size  : 1.7rem;
+    }
+
+    &--sub {
+
+      @include respond (tab-port) {
+        display: none;
+      }
+    }
+
+    &:not(:first-child) {
+      border-top: 1px solid rgba($color-grey-light, .4);
+    }
+
+    &--text {
+      font-size: 14px;
+
+      &--card {
+        width          : 42%;
+        // margin-right: 15px;
+      }
+    }
+
+    &--sentence {
+      font-size  : 15px;
+      font-weight: 600;
+    }
+  }
+
+  &__information {
+    width         : 100%;
+    display       : grid;
+    background    : $color-white;
+    padding       : 1rem;
+    font-size     : $default-font-size;
+    position: relative;
+    grid-template-rows: 15%;
+    grid-auto-rows: max-content;
+    height: fit-content;
+
+    @include respond (tab-port) {
+      grid-template-rows: auto;
+      padding      : 5rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__logo {
+    position: relative;
+    width   : 50%;
+    display : flex;
+
+    &>span{
+      width: 0;
+      font-size: 5rem;
+      display: block;
+    }
+
+    @include respond (phone) {
+      width  : 95%;
+      padding: 0;
+    }
+
+    &-container {
+      padding: 1rem;
+      background: $color-white;
+      display   : none;
+      justify-content: center;
+
+      @include respond (tab-port) {
+        display: flex;
+        padding: 3rem;
+      }
+
+      &--inner{
+        display: flex;
+
+        @include respond (tab-port) {
+          display: none;
+          visibility: hidden;
+        }
+      }
+    }
+  }
+
+  &__img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    max-width: 60rem;
+    max-height: 60rem;
+
+    &--pay {
+      height: 21px;
+      width : 70px;
+    }
+  }
+
+  &__seals {
+    display: flex;
+    padding        : 1.5rem;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__seal {
+    position: relative;
+    margin  : 0 1rem;
+    width: 15%;
+
+    &>span{
+      display: inline-block;
+      font-size: 2rem;
+    }
+  }
+
+
+}

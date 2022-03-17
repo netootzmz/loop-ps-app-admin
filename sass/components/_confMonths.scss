@@ -1,0 +1,38 @@
+@use "./../abtracts" as *;
+
+.conf-months {
+  display: grid;
+  width: 100%;
+  align-content: start;
+  grid-row-gap: 3rem;
+
+  &__container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3rem;
+  }
+}
+
+.withoutInterest {
+  width: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(4, 1fr);
+
+  &__months {
+    display: flex;
+    width: 100%;
+  }
+
+  .checkbox__container {
+    width: 100px;
+  }
+}
+
+.interests_buttons {
+  display: flex;
+  width: 100%;
+  margin-top: 15px;
+  justify-content: flex-end;
+}

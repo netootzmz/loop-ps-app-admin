@@ -1,0 +1,60 @@
+@use './../abtracts'as *;
+
+.auth {
+  display          : flex;
+  height           : 100vh;
+  width            : 100%;
+  background-image : linear-gradient(to right, rgba($color-primary, .2), rgba(#022e57, 1)), url("/login-wallpaper.svg");
+  background-size  : cover;
+  background-repeat: no-repeat;
+  overflow         : hidden;
+  align-items      : center;
+  justify-content  : center;
+  grid-column      : 1 / -1;
+
+
+  &__card {
+    display        : flex;
+    flex-direction : column;
+    width          : 30%;
+    min-height     : 50%;
+    padding        : 3rem;
+    justify-content: space-around;
+    align-items    : center;
+    background     : rgba($color-grey-light, .8);
+    border-radius  : 8px;
+    border         : 3px solid rgba($color-secondary, .1);
+    position       : relative;
+    text-align     : center;
+
+    @include respond (tab-land) {
+      width: 40%;
+    }
+
+    @include respond (tab-port) {
+      width: 55%;
+    }
+
+    @include respond (phone) {
+      width     : 90%;
+      min-height: 60%;
+    }
+
+    @include respond (big-desktop) {
+      width: 22%;
+    }
+  }
+
+  &__logo {
+    max-width: 29.4rem;
+    min-width: 60%;
+  }
+
+  &__langs {
+    position: absolute;
+    display : flex;
+    bottom  : 1rem;
+    right   : 1rem;
+  }
+
+}

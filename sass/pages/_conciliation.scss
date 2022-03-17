@@ -1,0 +1,70 @@
+@use './../abtracts'as *;
+
+.swal2-input-label{
+    color: $color-primary;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.swal2-cancel{
+    font-size: 1.2rem !important;
+}
+.swal2-confirm{
+    font-size: 1.2rem !important;
+}
+
+.conciliation{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+    justify-content: space-evenly;
+    // padding: 5px;
+    width: 100%;
+    &__dateText{
+        color: $color-primary;        
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-left: 20px;
+    }
+    &__selector{
+        width: 16.4%;
+        & > div{
+            width: 95%;
+            & > label{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    &__input{
+        width: 200px;
+    }
+    &__buttons{
+        display: grid;
+        height: 120px;
+        width: 120px;
+    }
+    &__configuration{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);        
+        grid-template-rows: repeat(3, 80px);
+        padding-bottom: 25px;
+        width: 100%;
+    }
+    &__inputs{
+        align-items: baseline;
+        display: flex;
+        justify-content: center;
+        padding-top: 25px;
+    }
+    &__half{
+        width: 40%;
+    }
+    &__actions{
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+    &__acquirerSelector{
+        padding-top: 25px;
+    }
+}

@@ -1,0 +1,122 @@
+@use "../abtracts" as *;
+.checkbox_dates{
+    width: 100%;
+    @include respond (tab-land) {
+        display: flex;        
+        justify-content: center;
+        justify-items: center;
+    }
+    & input[type="radio"] {
+        display: none;
+    }
+    & label{
+        color: $color-grey-dark;
+        display: inline-block;
+        font-size: 1em;
+        font-weight: normal;
+        border-radius: 5px;
+        cursor: pointer;
+        border-bottom: 5px solid transparent;
+        @include respond (tab-land) {
+            display: flex;
+            width: 50%;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 10px;
+        }
+    }
+    & label:hover{
+        color: $color-secondary;
+        font-weight: bold;
+        border-bottom: 5px solid $color-secondary;
+    }    
+    & input[type="radio"]:checked + label{
+        color: $color-secondary;
+        font-weight: bold;
+        border-bottom: 5px solid $color-secondary;
+    }
+    & .radioButtonsDate{
+        margin-left: 15px;
+        text-align: center;
+        @include respond (tab-land) {
+            align-self: center;
+            margin-left: 0;
+        }
+    }
+} 
+
+.datePicker{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    @include respond (tab-land) {
+        text-align: center;
+        justify-content: center;
+        width: 80%;
+        height: 50px;
+    }
+    
+    h1{
+        font-weight: bold;
+        font-size: 20px;
+        color: $color-primary;
+    }
+    h3{
+        width: 100%;
+    }
+    input{
+        text-align: center;
+        border: none;
+        @include respond (tab-land) {
+            width: 80%;
+            font-size: 12px;
+        }
+    }
+    input:focus-visible{
+        width: 100%;
+    }
+    &__range{
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include respond (tab-land) {
+            width: 80%;
+        }
+    }
+    &__days{
+        text-align: right;
+        p{
+            color: $color-grey-dark;
+            margin-right: 5px;
+        }
+        span{
+            color: $color-primary;
+        }
+    }
+}    
+.react-datepicker__day--keyboard-selected{
+    background-color: $color-secondary !important;
+    color: white !important;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range{
+    background-color: rgba($color-secondary, 0.5) !important;
+    border-radius: 10px !important;
+}
+
+.react-datepicker__header {
+    background-color: white !important;
+    border-bottom: none !important;
+}
+
+.react-datepicker__day-name{
+    color: $color-grey-dark !important;
+}
+
+.react-datepicker__current-month{
+    color: $color-primary !important;
+    font-weight: normal !important;
+}

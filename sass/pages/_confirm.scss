@@ -1,0 +1,76 @@
+@use './../abtracts'as *;
+
+.confirm {
+  display           : grid;
+  grid-template-rows: 1.6fr repeat(2, min-content) 4fr 1fr;
+  padding           : 5rem;
+  text-align        : center;
+
+  &__container {
+    grid-column: 1 / -1;
+    grid-row   : 1 / -1;
+    width      : 100vw;
+    height     : 100vh;
+    overflow-y : auto;
+  }
+
+  &__logo,
+  &__big,
+  &__power {
+    position: relative;
+  }
+
+  &__logo {
+    width : 50%;
+    margin: 0 auto;
+  }
+
+  &__error,
+  &__text {
+    font-size  : 2.5rem;
+    line-height: 1.2;
+    font-weight: 400;
+    text-shadow: 0px 2px 6px rgba(#000, .2);
+  }
+
+
+  &__error {
+    margin-top: 2rem;
+    color     : $color-error;
+  }
+
+  &__text {
+    margin-bottom: 2rem;
+  }
+
+  &__img {
+    width     : 100%;
+    height    : 100%;
+    object-fit: contain;
+  }
+
+  &__header {
+    width           : 100%;
+    height          : 35px;
+    background-color: $color-primary;
+  }
+
+  &__footer {
+    width           : 100%;
+    height          : 100px;
+    background-color: $color-primary;
+    position        : relative;
+  }
+
+  &__footer img {
+    fill: white;
+  }
+
+  .input__container {
+    border-bottom: none !important;
+  }
+}
+
+#cardPayProcessed {
+  border-bottom: none;
+}

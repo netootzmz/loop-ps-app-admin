@@ -1,0 +1,11 @@
+.users {
+  display           : grid;
+  padding           : 3rem;
+  padding-right     : 5rem;
+  grid-template-rows: min-content;
+  align-items       : center;
+  grid-column-gap   : 3rem;
+  grid-row-gap      : 3rem;
+  align-content     : start;
+  overflow-y        : auto;
+}

@@ -1,0 +1,177 @@
+@use "./../abtracts" as *;
+
+.table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+
+  &__cell {
+    font-size: 1.1rem;
+    height: 100%;
+    vertical-align: center;
+    padding: 0.5rem 0;
+    color: $color-primary;
+
+    &:last-child {
+      width: 1%;
+      padding-right: 3rem;
+    }
+  }
+
+  &__row {
+    border-left: 8px solid transparent;
+    transition: all 0.3s;
+    border-bottom: 1px solid rgba($color-primary, 0.3);
+    align-items: center;
+
+    &:hover {
+      background: rgba($color-secondary, 0.2);
+      border-bottom-left-radius: 20px;
+      border-left: 8px solid $color-secondary;
+      border-top-left-radius: 20px;
+
+      .btn--action {
+        color: $color-primary;
+      }
+    }
+  }
+
+  &__head {
+    border-bottom: 1px solid rgba($color-grey-dark, 0.3);
+    font-size: 11px;
+    font-weight: 400;
+  }
+
+  &__headers {
+    padding: 0 0.5rem;
+    width: fit-content;
+
+    &::before {
+      content: "\21C5";
+    }
+
+    &:last-child {
+      padding-right: 3rem;
+    }
+    &_pending {
+      height: 75px;
+      padding: 0 0.5rem;
+      width: 150px;
+
+      &:nth-child(1)::before,
+      &:nth-child(2)::before,
+      &:nth-child(3)::before,
+      &:nth-child(4)::before,
+      &:nth-child(5)::before,
+      &:nth-child(6)::before {
+        content: "\21C5";
+      }
+
+      &:last-child {
+        align-items: center;
+        display: flex;
+        padding-right: 3rem;
+        justify-content: center;
+      }
+    }
+
+    &:last-child {
+      align-items: center;
+      display: flex;
+      padding-right: 3rem;
+    }
+  }
+
+  &__conciliation {
+    color: $color-primary;
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+    width: fit-content;
+    &:nth-child(1)::before,
+    &:nth-child(2)::before,
+    &:nth-child(3)::before {
+      content: "\21C5";
+    }
+    &:last-child {
+      padding-right: 3rem;
+    }
+  }
+  &__dispersion {
+    color: $color-primary;
+    font-size: 1.25rem;
+    padding: 0 0.5rem;
+    width: fit-content;
+    &:nth-child(1)::before,
+    &:nth-child(2)::before,
+    &:nth-child(3)::before,
+    &:nth-child(6)::before,
+    &:nth-child(7)::before,
+    &:nth-child(8)::before,
+    &:nth-child(9)::before,
+    &:nth-child(11)::before {
+      content: "\21C5";
+    }
+    &:last-child {
+      padding-right: 3rem;
+    }
+  }
+
+  &__range {
+    font-family: "Roboto";
+    margin: 0 5px;
+    border: 1px solid rgba($color-grey-dark, 0.3);
+    border-radius: 5px;
+    font-size: $default-font-size;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+
+    &_right {
+      margin-left: 15px;
+    }
+  }
+
+  &__details {
+    width: 100%;
+  }
+
+  &__links {
+    border: none;
+    cursor: pointer;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: none;
+    overflow: hidden;
+    outline: none;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.pagination {
+  background-color: $color-white;
+  margin-left: auto;
+  z-index: 100;
+  display: flex;
+  padding: 1rem 1rem;
+  max-width: 75%;
+  align-items: center;
+  background: $color-white;
+  border-radius: 10px;
+  box-shadow: $light-shadow;
+  width: fit-content;
+  font-size: $default-font-size;
+  grid-column: 1 / -1;
+}

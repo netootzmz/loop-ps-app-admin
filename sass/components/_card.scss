@@ -1,0 +1,122 @@
+@use './../abtracts'as *;
+
+.card {
+  display       : flex;
+  padding       : 3rem 1rem;
+  flex-direction: column;
+  max-width     : 75%;
+  align-items   : center;
+  background    : $color-white;
+  border-radius : 10px;
+  box-shadow    : $light-shadow;
+  position      : relative;
+  // transition    : height 2s;
+
+  &--vigency {
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top           : 1rem;
+    width                : 90%;
+    margin-left          : -1rem;
+  }
+
+  &--small {
+    max-width: 55%;
+  }
+
+  &--dispersion {
+    display: flex;
+    height: 160px;
+    justify-content: center;
+    margin-right: 25px;
+    width: 45%;
+  }
+
+  &--big {
+    max-width: 100%;
+  }
+
+  &--ticket{
+    max-width: 85%;
+  }
+
+  &--mail{
+    padding: 4rem 1.5rem;
+    background-color: rgba($color-grey-dark, 0.8);
+  }
+  
+  &--short{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 20px 80px 80px;
+    height: fit-content;    
+  }
+
+
+  &--full {
+    min-width: 100%;
+    max-width: 100%;
+
+    &~div {
+      transition: height 2s;
+    }
+  }
+  &--tiny{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 80px;
+    max-height: 160px;
+  }
+  &--total{
+    min-width: 45vw;
+    max-width: 45vw;
+  }
+
+  &--inner-padding {
+    padding: 3rem;
+  }
+
+  &--sale {
+    display : grid;
+    grid-row: 6;
+  }
+
+  &--table {
+    grid-column: 1 / -1;
+  }
+  
+  &--conciliation{
+    grid-column: 1 / -1;
+    position: relative;
+  }
+
+  &--filters {
+    max-width: 100%;
+
+    @include respond (tab-land) {
+      max-width: none;
+      width    : 80%;
+    }
+  }
+
+  &--transparent {
+    box-shadow  : none;
+    background  : transparent;
+    height      : 100%;
+    //overflow  : hidden;
+  }
+
+  &--fit {
+    height : fit-content;
+    padding: 1rem;
+  }
+
+  &__graphic{
+    align-items: unset;
+  }
+
+
+  &--grey {
+    background: rgba($color-grey-dark, .8);
+  }
+}

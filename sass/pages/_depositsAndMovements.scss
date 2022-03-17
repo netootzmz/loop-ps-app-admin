@@ -1,0 +1,226 @@
+@use "./../abtracts" as *;
+
+.movements {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+
+  .deposits-and-movements__filters {
+    h3 {
+      margin: 0 0 2rem 0;
+      padding: 0;
+    }
+    .filters-container {
+      min-height: 20rem;
+      width: 50rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+
+      @include respond(tab-land) {
+        grid-template-columns: none;
+      }
+
+      .side {
+        display: grid;
+        grid-template-rows: auto 1fr;
+        height: 100%;
+
+        .side--container {
+          display: grid;
+          grid-template-columns: repeat(2, 50%);
+        }
+
+        article {
+          .input-date {
+            height: 82px;
+            display: flex;
+
+            & .datepicker__label {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    .btns-section {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .deposits-and-movements__table {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .card__table {
+      height: 100%;
+
+      .table__row {
+        border-bottom: none;
+
+        &:nth-child(even) {
+          background-color: rgba($color-grey-dark, 0.3);
+        }
+
+        &:hover {
+          background: rgba($color-secondary, 0.2);
+          border-bottom-left-radius: 20px;
+          border-left: 8px solid $color-secondary;
+          border-top-left-radius: 20px;
+
+          .btn--action {
+            color: $color-primary;
+          }
+        }
+      }
+
+      .pagination {
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+
+.deposit-details {
+  padding: 2rem;
+
+  .header-message {
+    padding: 0 0 3.5rem 2rem;
+
+    h1 {
+      letter-spacing: normal;
+      font-size: 2rem;
+      display: flex;
+      align-items: center;
+
+      span {
+        display: flex;
+      }
+
+      svg {
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .container-top-colum {
+    display: flex;
+
+    .report-btn {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .container-main-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+    width: 80%;
+    padding: 0 2rem;
+
+    .card {
+      min-width: 100%;
+      min-height: 12.8rem;
+      justify-content: space-between;
+      height: 100%;
+      padding: 1rem;
+
+      .card-container {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+
+        .title {
+          max-width: 18rem;
+          line-height: initial;
+          letter-spacing: normal;
+        }
+      }
+      .subtitle {
+        font-weight: 400;
+        width: 100%;
+        text-align: end;
+        letter-spacing: normal;
+      }
+    }
+  }
+
+  .container-detail-filters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1em;
+    grid-row-gap: 1rem;
+    width: 80%;
+    justify-content: space-around;
+    background: rgba($color-primary, 0.1);
+    border-radius: 10px;
+    margin-top: 3rem;
+    padding: 2rem;
+  }
+  .paper {
+    width: 100%;
+    max-height: 7.7rem;
+    min-height: 7.7rem;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background: $color-white;
+    border-radius: 10px;
+    box-shadow: $light-shadow;
+    position: relative;
+    transition: height 2s;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &--selected {
+      border-bottom: 8px solid $color-secondary;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      max-width: 14rem;
+      align-self: flex-start;
+      line-height: initial;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      font-weight: 400;
+      align-self: flex-end;
+    }
+  }
+
+  .card__table {
+    margin-top: 3rem;
+
+    .table__row {
+      border-bottom: none;
+
+      &:nth-child(even) {
+        background-color: rgba($color-grey-dark, 0.3);
+      }
+
+      &:hover {
+        background: rgba($color-secondary, 0.2);
+        border-bottom-left-radius: 20px;
+        border-left: 8px solid $color-secondary;
+        border-top-left-radius: 20px;
+
+        .btn--action {
+          color: $color-primary;
+        }
+      }
+    }
+  }
+}

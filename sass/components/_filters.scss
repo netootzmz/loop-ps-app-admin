@@ -1,0 +1,303 @@
+@use "./../abtracts" as *;
+
+.filters {
+  display: grid;
+  height: fit-content;
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+
+  &__transactions {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    align-items: end;
+
+    @include respond(big-desktop) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    &--full {
+      grid-template-columns: repeat(5, 1fr);
+
+      @include respond(tab-land) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    &--block {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column: 3 / -1;
+      width: 100%;
+      height: 100%;
+      grid-auto-rows: fit-content;
+      align-items: end;
+      align-content: end;
+
+      @include respond(tab-port) {
+        grid-column: 1 / -1;
+      }
+
+      @include respond(tab-land) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &--block-tmp {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column: 1 / -1;
+      width: 100%;
+      height: 100%;
+      grid-auto-rows: fit-content;
+      align-items: end;
+      align-content: end;
+
+      @include respond(tab-port) {
+        grid-column: 1 / -1;
+      }
+
+      @include respond(tab-land) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    &--block-sm {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column: 1 / 3;
+      height: 100%;
+      width: 100%;
+      grid-auto-rows: fit-content;
+      align-items: end;
+      align-content: end;
+
+      @include respond(tab-port) {
+        grid-column: 1 / -1;
+      }
+
+      @include respond(tab-land) {
+        align-items: start;
+        align-content: start;
+      }
+    }
+
+    &--collapsed {
+      display: grid;
+      grid-column: 4 / 7;
+      grid-template-columns: repeat(3, 1fr);
+
+      @include respond(tab-land) {
+        grid-column: 1 / -1;
+      }
+
+      @include respond(big-desktop) {
+        grid-column: 3 / 6;
+      }
+    }
+  }
+
+  &--users {
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    grid-column-gap: 3rem;
+  }
+
+  &__users {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    width: 100%;
+    align-items: center;
+  }
+
+  &__sub {
+    grid-column: span 2;
+    font-size: $default-font-size;
+    font-weight: 400;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+
+    &--full {
+      grid-column: 1 / -1;
+    }
+  }
+
+  &__tabs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    grid-column-gap: 1rem;
+  }
+
+  &__tab {
+    display: flex;
+    width: 100%;
+    background: $color-white;
+    box-shadow: $light-shadow;
+    border-radius: 5px;
+    padding: 0.5rem 0.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+  }
+
+  &__close {
+    font-size: 2.6rem;
+    line-height: 1;
+    color: $color-primary;
+    padding: 0 0.5rem;
+    backface-visibility: hidden;
+
+    &:hover {
+      text-shadow: 0px 2px 2px rgba(#000, 0.4);
+      transform: translateY(-1px);
+    }
+  }
+
+  &__footer {
+    display: grid;
+    grid-template-columns: 4fr min-content min-content;
+    align-items: start;
+    width: 100%;
+    grid-column-gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  &__submit {
+    grid-column: 3 / 4;
+  }
+}
+
+.datefilter {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: start;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: fit-content;
+  grid-column: 1 / -1;
+  margin-left: 2rem;
+
+  &__container {
+    width: fit-content;
+  }
+
+  &__label {
+    display: block;
+    box-shadow: 0px 2px 3px 1px rgba(#000, 0.3);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: $default-font-size;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 500;
+    color: $color-grey-dark;
+    transition: 0.4s all;
+    backface-visibility: hidden;
+
+    & > span {
+      line-height: 1;
+      display: block;
+      width: 100%;
+      padding: 1em 2em;
+      padding-bottom: 0.7em;
+      border-bottom: 0.3em solid transparent;
+      transition: 0.4s all;
+      transition: border-bottom 0.2s;
+    }
+
+    &:hover {
+      color: $color-secondary;
+      text-shadow: 0px 2px 3px rgba(#000, 0.2);
+      box-shadow: 0px 2px 4px 1px rgba(#000, 0.4);
+
+      & > span {
+        border-bottom: 0.3em solid $color-secondary;
+      }
+    }
+  }
+
+  &__check {
+    display: none;
+    visibility: hidden;
+  }
+
+  &__check:checked ~ &__label {
+    color: $color-secondary;
+    text-shadow: 0px 2px 3px rgba(#000, 0.2);
+    box-shadow: 0px 2px 4px 1px rgba(#000, 0.4);
+
+    & > span {
+      border-bottom: 0.3em solid $color-secondary;
+    }
+  }
+}
+
+.msifilter {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: start;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  width: fit-content;
+  grid-column: 1 / -1;
+  margin-left: 2rem;
+
+  &__container {
+    width: fit-content;
+  }
+
+  &__label {
+    display: block;
+    box-shadow: 0px 2px 3px 1px rgba(#000, 0.3);
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    font-size: $default-font-size;
+    overflow: hidden;
+    cursor: pointer;
+    font-weight: 500;
+    color: $color-grey-dark;
+    transition: 0.4s all;
+    backface-visibility: hidden;
+
+    & > span {
+      line-height: 1;
+      display: block;
+      width: 100%;
+      padding: 1em 2em;
+      padding-bottom: 0.7em;
+      border-bottom: 0.3em solid transparent;
+      transition: 0.4s all;
+      transition: border-bottom 0.2s;
+    }
+  }
+
+  &__check {
+    display: none;
+    visibility: hidden;
+  }
+
+  &__check:checked ~ &__label {
+    color: $color-secondary;
+    text-shadow: 0px 2px 3px rgba(#000, 0.2);
+    box-shadow: 0px 2px 4px 1px rgba(#000, 0.4);
+
+    & > span {
+      border-bottom: 0.3em solid $color-secondary;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.mailserver{
+    margin-bottom: 60px;
+    position: relative;
+    padding: 20px;
+    width: 90%;
+    &__row{
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        & h4{
+            width: 130px;
+        }
+        &_input{
+            width: 40%;
+        }
+    }
+    &__selectors{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;     
+        &_input{
+            align-items: center;
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            & h4 {
+                width: 100px;
+            }
+            &_container{
+                padding-left: 20px;
+                width: 60%;
+            }
+        }   
+    }
+    &__buttons{
+        bottom: -10%;
+        position: absolute;        
+        right: 0;
+    }
+}

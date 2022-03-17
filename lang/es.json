@@ -1,0 +1,736 @@
+{
+  "titles": {
+    "loading": "Cargando...",
+    "main": "Inicio",
+    "account": {
+      "main_title": "Administrar cuenta",
+      "change_password": "Cambiar contraseña",
+      "preferences": "Preferencias"
+    },
+    "payments": {
+      "main_title": "Pagos a distancia",
+      "generate": "Generar pago a distancia",
+      "status": "Estatus de pagos a distancia",
+      "parameters": {
+        "hours": "Horas",
+        "days": "Días",
+        "weeks": "Semanas",
+        "months": "Meses",
+        "time_unit": "La unidad de tiempo es requerida",
+        "validity": "Vigencia",
+        "validityMessage": "La vigencia es requerida",
+        "concept": "Concepto",
+        "conceptMessage": "El concepto es requerido",
+        "referenceMessage": "La referencia es requerda",
+        "valid_quantity": "Debes introducir una cantidad válida",
+        "generate_link": "Generar liga de pago",
+        "time_unity": "Unidad de medida de tiempo",
+        "unity": "Unidad",
+        "value": "Valor",
+        "validity_link": "Las ligas tendrán una vigencia de",
+        "sale_concept": "Concepto de venta",
+        "max_characters": "La longitud máxima es de 120 carácteres",
+        "amount": "Monto",
+        "sale_reference": "Referencia de la venta",
+        "reference": "Referencia",
+        "months_without": "Meses sin intéreses",
+        "accept": "Aceptar",
+        "not_accept": "No aceptar",
+        "three_months": "3 meses",
+        "six_months": "6 meses",
+        "nine_months": "9 meses",
+        "twelve_months": "12 meses",
+        "clean": "Limpiar",
+        "generate": "Generar",
+        "send_link": "Enviar liga de pago",
+        "payment_link": "Liga de pago",
+        "email": "Correo electrónico",
+        "send": "Enviar"
+      }
+    },
+    "reports": {
+      "main_title": "Consulta y reportes",
+      "transactions": "Reporte de transacciones",
+      "deposits_and_movements": "Depósitos y Movimientos"
+    },
+    "adjustment": {
+      "main_title": "Ajustes monetarios",
+      "types": "Alta de tipos de ajustes",
+      "reports": "Reportes de ajustes aplicados",
+      "configuration": "Configuración de montos",
+      "manual": "Ajustes manuales",
+      "auth": "Autorizar ajustes manuales",
+      "massive": "Ajustes masivos",
+      "authMassive": "Autorizar ajustes masivos",
+      "parameters": {
+        "processing": "Procesando",
+        "saveQuestion": "¿Estás seguro que desea Guardar/Modificar?",
+        "user": "Usuario",
+        "nature": "Naturaleza",
+        "individualAmount": "Monto individual",
+        "noCancel": "No, cancelar",
+        "yesCancel": "Sí, continuar",
+        "limitSave": "Límites de montos guardados satisfactoriamente",
+        "errorLimit": "El límite de monto diario no debe ser menor al monto individual, favor de validar",
+        "notAmount": "No se dio de alta el límite de monto, valide que los campos fueron llenados ",
+        "dailyAmount": "Monto individual por ajustes diarios",
+        "amount": "Monto",
+        "totalDaily": "Monto total por ajustes diarios",
+        "cancel": "Cancelar",
+        "save": "Guardar",
+        "daily": "Monto individuapor ajute",
+        "totalAdjust": "Monto total ajustes diarios",
+        "edit": "Editar",
+        "saveConfirm": "¿Estás seguro que desea guardar/modificar el tipo de ajuste",
+        "authorize": "Sí, autorizar",
+        "saveAdjust": "Tipo de ajuste guardado satisfactoriamente",
+        "errorProcess": "El proceso es erróneo, intente nuevamente",
+        "errorRegist": "No se dio de alta el Tipo de Ajuste, valide que los campos fueron llenados",
+        "dataFound": "Información encontrada",
+        "dataNotFound": "No se encontraron resultados",
+        "selectFilter": "Favor seleccionar al menos un filtro para la búsqueda",
+        "dontObtain": "No se pudo obtener las categorías",
+        "dontNature": "No se pudo obtener las opciones de naturaleza",
+        "status": "Estatus",
+        "category": "Categoría",
+        "categoryName": "Nombre de la categoría",
+        "categoryRegist": "Alta de categorías",
+        "processWrong": "El proceso es erróneo, intente nuevamente",
+        "nameRequired": "Es necesario el nombre de la categoría",
+        "success": "Éxito",
+        "categorySave": "Categoría guardada satisfactoriamente",
+        "actionQuestion": "¿Estás seguro de aplicar esta acción?",
+        "continue": "Continuar",
+        "delete": "Eliminar",
+        "mustSelect": "Se debe seleccionar una categoría",
+        "deleteQuestion": "¿Está seguro que desea eliminar",
+        "deleteSuccessfully": "Categoría eliminada satisfactoriamente",
+        "registAdjust": "Alta de tipo de ajuste",
+        "adjustType": "Tipo de ajuste",
+        "newAdjustType": "Nuevo tipo de ajuste",
+        "newCategory": "Nueva categoría",
+        "deleteCategory": "Eliminar categoría",
+        "nameAdjustType": "Nombre de tipo de ajuste",
+        "search": "Buscar",
+        "clean": "Limpiar",
+        "createdBy": "Creado por",
+        "logs": "Bitácora",
+        "selectFile": "Selecciona el archivo para ",
+        "load": "Cargar",
+        "analyze": "Analizar",
+        "download": "Descargar",
+        "downloadLayout": "Descarga aquí el layout para la descarga masiva de ajustes",
+        "commerceName": "Nombre del comercio",
+        "idCommerce": "ID Comercio",
+        "adjustLine": "Línea de ajuste",
+        "debitLine": "Línea de débito",
+        "solution": "Solución",
+        "name": "Nombre",
+        "approve_status": "Estatus de aprobación",
+        "application_status": "Estatus de aplicación",
+        "final_date": "Fecha final",
+        "initial_date:": "Fecha inicial",
+        "payment_status": "Estatus de pago",
+        "link_status": "Estatus de liga",
+        "not_pay": "No pagado",
+        "pay": "Pagado",
+        "active": "Activo",
+        "canceled": "Cancelada",
+        "expired": "Expirada",
+        "wait": "Espere un momento mientras preparamos el archivo",
+        "filters": "Filtros",
+        "today": "Hoy",
+        "yesterday": "Ayer",
+        "current_week": "Semana actual",
+        "current_month": "Mes actual",
+        "last_month": "Mes anterior",
+        "date_range": "Rango de fechas",
+        "individual": "Individuales",
+        "per_file": "Por archivo"
+      }
+    },
+    "colors": {
+      "link": "Enlace de pago a distancia",
+      "commerceName": "Nombre del comercio",
+      "commerceAddress": "Dirección",
+      "commerceAddressStore": "Dirección de la sucursal",
+      "commerceMail": "Correo",
+      "greetings": "¡Hola!",
+      "details": "Los detalles de su compra son:",
+      "date": "Fecha y hora:",
+      "concept": "Concepto de venta:",
+      "number": "Número de referencia:",
+      "amount": "Monto de transacción:",
+      "linkDate": "Enlace disponible hasta:",
+      "proves": "Pruebas ABP",
+      "payment": "Realizar pago",
+      "question": "¿Tienes alguna duda o te podemos ayudar en algo?",
+      "attention": "Estamos para atenderte, por favor comunicate con nosotros"
+    },
+    "dispersion": {
+      "main_title": "Dispersion",
+      "dispersion_file": "Archivos de dispersión",
+      "pending_payments": "Pagos pendientes"
+    },
+    "conciliation": {
+      "main_title": "Conciliación",
+      "digits": "Cifras de control y liquidación",
+      "detail": "Detalle de movimientos",
+      "liquidation_log": "Registro de liquidación",
+      "dispersion": "Reporte de dispersión",
+      "liquidation_detail": "Detalle de liquidación",
+      "log": "Conciliación registro",
+      "configuration": "Configuración archivos y proc.",
+      "parameters": {
+        "processing": "Procesando",
+        "not_found": "No se encontraron registros",
+        "bank_select": "Por favor, seleccione un banco",
+        "control_title": "Cifras de control conciliación y liquidación",
+        "date_range": "Rango de fechas",
+        "trasmitter_placeholder": "Todos",
+        "transmitter_label": "Banco",
+        "all_placeholder": "Todas",
+        "status_placeholder": "Estatus",
+        "status_conciliated": "Conciliado",
+        "status_not_conciliated": "No conciliado",
+        "conciliation_placeholder": "Tipo de conciliación",
+        "conciliation_manual": "Manual",
+        "conciliation_auto": "Automática",
+        "conciliation_auto_no_accent": "Automatica",
+        "register_placeholder": "Registros",
+        "clean_button": "Limpiar",
+        "search_button": "Buscar",
+        "download_button": "Descargar",
+        "date_txn": "Fecha txn",
+        "bank": "Banco",
+        "no_txn_smart": "No. txn Smart",
+        "smart_amount": "Monto Smart",
+        "no_txn_bank": "No. txn Banco",
+        "bank_amount": "Monto Banco",
+        "chargeback": "Contracargo",
+        "refund": "Devolución",
+        "total_bank": "Total Banco",
+        "total_treasury": "Toltal Tesorería",
+        "concile": "Conciliar",
+        "conciliation_note": "Nota conciliación",
+        "conciliation": "Conciliación",
+        "question_download": "¿Quiere descargar este archivo?",
+        "confirm_download": "Sí, descargar",
+        "deny_download": "No, cancelar",
+        "success": "Éxito",
+        "success_download": "Archivo descargado exitosamente",
+        "error": "Error",
+        "error_download": "No se encontró ningún archivo",
+        "treasury_title": "Nuevo monto de tesorería",
+        "treasury_placeholder": "Nuevo monto",
+        "treasury_cancel": "Cancelar",
+        "treasury_save": "Guardar",
+        "treasury_not_register": "No se pudo registrar el nuevo monto de tesorería correctamente",
+        "treasury_not_obtain": "Error de conexión con el MS",
+        "treasury_not_over": "El monto debe ser mayor a 0",
+        "dispersion_found": "Se encontraron dispersiones",
+        "dispersion_not_found": "No se encontraron datos",
+        "dispersion_error": "Ocurrió un error al obtener las dispersiones, favor de reintentar",
+        "dispersion_title": "Filtros",
+        "dispersion_merchant": "Número de comerciante",
+        "dispersion_date": "Fecha de generación de archivo de dispersión",
+        "dispersion_file": "Nombre del archivo de dispersión",
+        "dispersion_user": "Usuario que generó",
+        "dispersion_generated": "Archivos generados",
+        "modal_activity": "Actividad",
+        "modal_user": "Usuario",
+        "modal_date": "Fecha y hora",
+        "modal_title": "Registros de conciliación",
+        "modal_download": "Descargar",
+        "manual_conciliation": "Conciliación manual",
+        "table_conciliation": "Conciliación",
+        "table_liquidation": "Liquidación",
+        "table_total": "Total liquidación",
+        "approve_status": "Estatus de aprobación",
+        "application_status": "Estatus de aplicación",
+        "adjust_name": "Nombre tipo de ajuste",
+        "adjust_amount": "Monto",
+        "nature": "Naturaleza",
+        "idCommerce": "ID Comercio",
+        "commerceName": "Nombre del comercio",
+        "solution": "Solución",
+        "captureDate": "Fecha de captura",
+        "userCapture": "Usuario captura",
+        "authorize": "Autorizar",
+        "user_authorize": "Usuario autoriza",
+        "date_authorize": "Fecha de autorización",
+        "total_amount_charge": "Monto total cargos",
+        "total_amount_payment": "Monto total abonos",
+        "decline": "Rechazar",
+        "found_info": "Información encontrada",
+        "regist_conf": "Agregar configuración de archivo",
+        "layout_name": "Nombre del layout",
+        "description": "Descripción",
+        "transaction_key": "Clave de transacción",
+        "transaction_template": "Template de transacción",
+        "document_header": "Cabecera de documento",
+        "regist_num": "Número de registro",
+        "regist_state": "Estado de registro",
+        "regist_separator": "Separador de registro",
+        "acquirer": "Adquiriente",
+        "select": "Seleccione",
+        "save": "Guardar",
+        "file_configurations": "Configuraciones de archivo",
+        "description_layout": "Descripción layout",
+        "user_register": "Usuario registro",
+        "status": "Estatus",
+        "date_register": "Fecha Registro",
+        "actions": "Acciones",
+        "cancel": "Cancelar",
+        "correct_send": "Conciliación manual enviada correctamente",
+        "error_send": "No se puso realizar la conciliación manual",
+        "more_than_zero": "Debe ser un número y con un valor mayor a 0",
+        "notes": "Notas",
+        "enter_description": "Por favor ingrese una descripción",
+        "ms_error": "Error de conexión con el MS",
+        "no_data": "No hay información en la BD",
+        "treasury_update": "Total de tesorería actualizado",
+        "date_invalid": "Se debe seleccionar un rango de fechas"
+      }
+    },
+    "commerce": {
+      "main_title": "Comercio"
+    },
+    "profile": {
+      "preferences": {
+        "title": "Configuraciones del sistema",
+        "checkout": {
+          "title": "Checkout",
+          "parameters": {
+            "title": "Parámetros",
+            "configuration_msi": "Configuración de MSI",
+            "allow_msi": "Permitir meses sin intereses",
+            "accept": "Aceptar",
+            "not_accept": "No aceptar",
+            "cancel": "Cancelar",
+            "save": "Guardar",
+            "message": "Mensaje"
+          },
+          "visual_identity": "Identidad gráfica",
+          "mails": "Correos"
+        },
+        "general": {
+          "title": "Generales",
+          "visual_identity": "Identidad gráfica",
+          "mails": "Correos",
+          "mail_service": "Servicio de correo",
+          "parameters": {
+            "processing": "Procesando",
+            "requiredFile": "El campo es requerido",
+            "invalidMail": "Correo invalido",
+            "success": "Éxito",
+            "load_error": "Sin configuración previa guardada",
+            "protocol": "Protocolo",
+            "configuration": "Configuración",
+            "mail_server": "Nombre del servidor de correo saliente",
+            "port": "Puerto",
+            "security": "Seguridad",
+            "security_protocol": "Protocolo de seguridad",
+            "authentication": "Autenticación",
+            "user": "Usuario",
+            "password": "Contraseña",
+            "cancel": "Cancelar",
+            "save": "Guardar",
+            "design_assistant": "Asistente de diseño de correos",
+            "use_assistant": "Utilizar asistente de correos",
+            "own_design": "Cargar mis plantillas HTML",
+            "visual_identity": "Identidad gráfica de los correos",
+            "top_logo": "Logotipo superior",
+            "file_location": "Ubicación del archivo",
+            "examine": "Examinar",
+            "must_be": "Debe de ser un archivo",
+            "file_limitations": " con un peso menor a 400Kb y un tamaño máximo de 600px por 600px.",
+            "mail_border": "Marco del correo",
+            "select_border": "Seleccionar un marco",
+            "separator": "Separador",
+            "mail_colors": "Colores del correo",
+            "mail_body": "Cuerpo del correo",
+            "body_typography": "Típografía del cuerpo",
+            "mail_footer": "Footer del correo",
+            "footer_typography": "Tipografía del footer",
+            "action_buttons": "Botones de acción",
+            "buttons_typography": "Tipografía de los botones",
+            "mail_preview": "Vista previa del correo",
+            "open_desktop": "Abrir en vista de escritorio"
+          }
+        },
+        "portal_access": {
+          "title": "Acceso al portal",
+          "first_login": "Primer login",
+          "verification_code": "Código de verificación",
+          "restored_password": "Contraseña restaurada"
+        },
+        "profiles": {
+          "title": "Perfiles"
+        },
+        "remote_payments": {
+          "title": "Pagos a distancia",
+          "payment_links": "Ligas de pago",
+          "reports": "Estatus de pagos a distancia",
+          "parameters": "Parámetros",
+          "visual_identity": "Identidad gráfica",
+          "mail_payment_link": "Correo envío de liga",
+          "proof_of_payment": "Comprobante de pago",
+          "sms": "SMS",
+          "parameter": {
+            "processing": "Procesando",
+            "hour": "Hora",
+            "day": "Día",
+            "week": "Semana",
+            "month": "Mes",
+            "cancel": "Cancelar",
+            "save": "Guardar",
+            "requiredFile": "El campo es requerido",
+            "invalidMail": "Correo invalido",
+            "success": "Éxito",
+            "load_error": "Error al cargar la información",
+            "personalize_texts": "Textos personalizados",
+            "header_text": "Texto del header",
+            "title": "Título",
+            "line_one": "Línea 1",
+            "line_two": "Línea 2",
+            "end_body": "Mensaje de cierre del body",
+            "message": "Mensaje",
+            "footer": "Footer",
+            "footer_line_one": "Footer línea 1",
+            "telephone": "Télefono",
+            "mail": "Correo",
+            "disclaimer": "Disclaimer",
+            "mail_preview": "Vista previa del correo",
+            "remote_payment_link": "Enlace de pago a distancia",
+            "commerceName": "Nombre del comercio",
+            "commerceAddress": "Dirección: <dirección de la sucursal>",
+            "greetings": "¡Hola!",
+            "details": "Los detalles de su compra son:",
+            "date": "Fecha y hora:",
+            "sale_concept": "Concepto de venta",
+            "reference_number": "Número de referencia:",
+            "transaction_amount": "Monto de transacción",
+            "link_available": "Enlace disponible hasta:",
+            "do_payment": "Realizar pago",
+            "question": "¿Tienes alguna duda o te podemos ayudar en algo?",
+            "attention": "Estamos para atenderte, por favor comunicate con nosotros",
+            "top_separator": "Separador superior",
+            "disclaimer_default": "Este mensaje es de carácter informatico \n Si no desea recibir más correos...",
+            "smart_logo": "Logo de smart",
+            "remote_payments": "Pagos a distancia",
+            "ticket": "A continuación te presentamos el comprobante de pago de tu compra",
+            "thanks": "Gracias por su compra",
+            "sale": "Venta",
+            "tip": "Propina",
+            "total": "Total",
+            "approved": "Aprobada",
+            "authorization": "Autorización",
+            "affiliation_number": "Número de afiliación",
+            "transaction_type": "Tipo de transacción",
+            "payment_date": "Fecha de pago",
+            "folio": "Folio",
+            "card_number": "No. de tarjeta",
+            "transmitter": "Emisor",
+            "acquirer": "Adquiriente",
+            "card_type": "Tipo de tarjeta",
+            "product": "Producto",
+            "account_status": "El estado de cuenta podría mostrar el cargo por parte de Smart Payment Services",
+            "single_payment": "Pago en una sola exhibición. Por este pagaré se toma obligo incondicional a pagar la orden al banco acreditable de importe de este título. Este pagaré procede del contrato de aprtura del crédito que el banco tiene celebrado con el tarjetahabiente",
+            "dont_recognize": "¿No reconoces esta actividad? \n Ponte en contacto con nosotros en Contacto Smart 55 5351 8420 o al 800 34 76278  \n Este correo es infotmativo, favor de no responder a esta dirección de correo,\n ya que no se encuentra habilitada para recibir mensajes",
+            "client_data": "Datos del cliente",
+            "payment": "Pago",
+            "top_logo": "Logotipo superior",
+            "file_location": "Ubicación del archivo",
+            "examine": "Examinar",
+            "must_be": "Debe de ser un archivo",
+            "file_limitations": " con un peso menor a 400Kb y un tamaño máximo de 600px por 600px.",
+            "colors": "Colores",
+            "body_typography": "Típografía del cuerpo",
+            "help_text_typography": "Tipografía textos de ayuda",
+            "body_resume": "Cuerpo del resumen",
+            "resume_typography": "Tipografía del resumen",
+            "action_buttons": "Botones de acción",
+            "buttons_typography": "Tipografía de los botones",
+            "preview": "Vista previa",
+            "open_desktop": "Abrir en vista de escritorio"
+          }
+        },
+        "users": {
+          "title": "Usuarios"
+        }
+      }
+    }
+  },
+  "payments": {
+    "individual": {
+      "generate": {
+        "validity": {
+          "unit": {
+            "placeholder": "Unidad",
+            "error_empty": "Introduce una unidad válida",
+            "error_not_unit": "El número introducido no es una unidad válida"
+          },
+          "value": {
+            "placeholder": "Valor",
+            "error_empty": "Introduce un valor válido",
+            "error_not_value": "El valor introducido no es válido"
+          }
+        },
+        "concept": {
+          "placeholder": "Concepto",
+          "error_empty": "Introduce un concepto válido",
+          "error_not_concept": "El concepto introducido no es válido"
+        },
+        "reference": {
+          "placeholder": "Referencia",
+          "error_empty": "Introduce una referencia válida",
+          "error_not_reference": "La referencia introducida no es válida"
+        },
+        "amount": {
+          "placeholder": "Monto",
+          "error_empty": "Introduce un monto válido",
+          "error_not_amount": "El monto introducido no es válido"
+        }
+      },
+      "send": {
+        "payment_link": {
+          "placeholder": "Liga de pago"
+        },
+        "send_method": {
+          "placeholder": "Método de envío",
+          "error_empty": "Introduce un metodo válido",
+          "error_not_method": "Método no válido"
+        },
+        "email": {
+          "placeholder": "Correo electrónico",
+          "error_empty": "Introduce un correo válido",
+          "error_not_email": "Correo no válido"
+        }
+      }
+    },
+    "remote": {
+      "configuration": {
+        "main_label": "Configuración",
+        "behavior_after_shipment": {
+          "main_label": "Comportamiento tras el envío",
+          "blocking": "Bloqueante",
+          "non_blocking": "No bloqueante"
+        },
+        "allow_months_without_interest": {
+          "main_label": "Permitir meses sin intereses",
+          "allow": "Si permitir",
+          "do_not_allow": "No permitir",
+          "minimum_amount": "Monto mínimo",
+          "three_months": "3 meses",
+          "six_months": "6 meses",
+          "nine_months": "9 meses",
+          "twelve_months": "12 meses",
+          "error_minimum_amount_higher": "Este monto deberia ser mayor a los anteriores"
+        },
+        "default_vigency": {
+          "main_label": "Vigencia por default",
+          "set_up": "Establecer",
+          "do_not_set_up": "No establecer",
+          "allow_edit": "Permitir edición",
+          "unit": "Unidad",
+          "value": "Valor"
+        },
+        "cardholder": {
+          "main_label": "Solicitar datos al tarjetahabiente",
+          "require": "Requerir",
+          "don_not_require": "No requerir"
+        }
+      }
+    }
+  },
+  "transactions": {},
+  "cookies": {
+    "title": "Esta página web usa cookies",
+    "text": "Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales, y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios.",
+    "button": "Estoy de acuerdo",
+    "link": "Ver más información"
+  },
+  "login": {
+    "title": "Iniciar sesión",
+    "inputs": {
+      "email": {
+        "placeholder": "Usuario",
+        "error_empty": "Este campo no puede estar vacío",
+        "error_not_email": "El texto introducido no es un correo válido"
+      },
+      "password": {
+        "placeholder": "Contraseña",
+        "error_empty": "Este campo no puede estar vacío",
+        "error_lenght": "La contraseña debe contener mínimo 6 caracteres"
+      }
+    },
+    "submit": "Iniciar sesión",
+    "link": "¿Olvidaste tu contraseña?"
+  },
+  "forgot": {
+    "title": "Recuperar contraseña",
+    "subtitle": "Ingresa tu correo electrónico",
+    "input": {
+      "placeholder": "Correo electrónico",
+      "error_empty": "Este campo no puede estar vacío",
+      "error_not_email": "El texto introducido no es un correo válido"
+    },
+    "swalbox": {
+      "title": "¡Éxito!",
+      "text_1": "Se ha enviado un mail a ",
+      "text": " revisa tu bandeja de entrada, en caso de no recibir un correo contacta a tu administrador",
+      "button": "Continuar",
+      "error": "Ocurrió un error, intenta más tarde"
+    },
+    "submit": "Recuperar contraseña",
+    "link": "Regresar"
+  },
+  "recover": {
+    "title": "¡Hola!",
+    "head": "Actualiza tu contraseña",
+    "inputs": {
+      "password": {
+        "placeholder": "Nueva contraseña"
+      },
+      "confirm": {
+        "placeholder": "Repite tu contraseña",
+        "error": "Tienes que confirmar tu contraseña"
+      }
+    },
+    "swalbox": {
+      "title": "¡Éxito!",
+      "text": "Inicia sesión con tu nueva contraseña",
+      "button": "Continuar",
+      "error": "Ocurrió un error, intenta más tarde"
+    },
+    "submit": "Continuar",
+    "link": "Iniciar sesión"
+  },
+  "password_validation": {
+    "minLength": "Debe contener entre 8 y 20 caracteres",
+    "digit": "Debe tener mínimo un dígito",
+    "lowercase": "Debe tener mínimo una minúscula",
+    "uppercase": "Debe tener mínimo una mayúscula",
+    "special": "Debe tener mínimo un caracter especial (@#$%^&+=)",
+    "nowhitespace": "No debe de contener espacios en blanco",
+    "norepeat": "No debe de repetir letras consecuentemente",
+    "norepeatnumbers": "No debe tener números consecutivos",
+    "norepeatcharacters": "No debe contener caracteres repetidos consecutivos",
+    "noinverserepeatnumbers": "No debe tener números consecutivos",
+    "noinverserepeatcharacters": "No debe tener caracteres consecutivos"
+  },
+  "user_menu": {
+    "account": "Administrar cuenta",
+    "system": "Configuraciones del sistema",
+    "logout": "Cerrar sesión"
+  },
+  "home": {
+    "welcome": {
+      "name": "Hola",
+      "title": "¡Bienvenido al portal Smart!",
+      "msg": "Somos expertos en medios de pago"
+    },
+    "contact": {
+      "title": "¿Necesitas ayuda?",
+      "msg": "Nuestro equipo está listo para apoyarte con todas tus dudas.",
+      "times": {
+        "title": "Horario de atención",
+        "ss": "24 horas, 7 días a la semana."
+      },
+      "mail": "Envianos un correo a"
+    }
+  },
+  "changePassword": {
+    "menu": {
+      "title": "Administrar cuenta",
+      "pp": "Preferencias personales",
+      "cp": "Cambiar contraseña"
+    },
+    "password_text": "Ingresa una contraseña de mínimo 8 caracteres, debe incluir mínimo una mayúscula, una minúscula, un número y un caracter especial",
+    "inputs": {
+      "currentpass": "Contraseña actual",
+      "password": "Nueva contraseña",
+      "confirm": "Repite la contraseña",
+      "error": "Este campo es requerido"
+    },
+    "swalbox": {
+      "title": "¡Éxito!",
+      "text": "Tu contraseña fué actualizada",
+      "button": "Continuar",
+      "error": "Ocurrió un error, intenta más tarde"
+    },
+    "submit": "Cambiar contraseña"
+  },
+  "reports": {
+    "title": "Consultas y reportes",
+    "transactions": {
+      "title": "Reporte de transacciones"
+    }
+  },
+  "cardDetail": {
+    "nav": {
+      "client": "Cliente",
+      "note": "Pagaré",
+      "transaction": "Transacción",
+      "card": "Tarjeta",
+      "payment": "Costos y comisiones"
+    },
+    "client": {
+      "title": "Información del cliente",
+      "email": "Correo electrónico",
+      "phone": "Telefóno",
+      "name": "Nombre del cliente",
+      "address": "Dirección",
+      "pay": "Pago"
+    },
+    "note": {
+      "text": "Agradecemos tu compra",
+      "sale": "Venta",
+      "tip": "Propina",
+      "total": "Total",
+      "authorization": "Autorización",
+      "membership": "No. de afiliación",
+      "type_transaction": "Tipo de transacción",
+      "date_payment": "Fecha de pago",
+      "reference": "No. referencia",
+      "folio": "Folio",
+      "card": "No. tarjeta",
+      "transmitter": "Emisor",
+      "acquirer": "Adquiriente",
+      "eci": "ECI",
+      "type_brand": "Tipo de tarjeta",
+      "product": "Producto",
+      "footer": "El estado de cuenta podría mostrar el cargo por parte de SMARTPY*",
+      "footer_1": "Pago en una sola exhibición. por este pagaré se toma obligo  incondicional a pagar la orden al banco acreditable del importe de este título. este pagaré procede al contrato de apertura del crédito que el banco tiene celebrado con el tarjetahabiente."
+    },
+    "transaction": {
+      "title": "Información de la transacción",
+      "result": "Resultado de transacción",
+      "response": "Respuesta",
+      "transaction_date": "Fecha",
+      "transaction_hour": "Hora",
+      "product": "Producto",
+      "payment_method": "Medio de pago",
+      "payment_type": "Tipo de venta",
+      "payment_total": "Monto cobrado",
+      "order_id": "ID orden",
+      "authorization": "Código de autorización",
+      "reference": "Referencia"
+    },
+    "brand": {
+      "title": "Información de la tarjeta",
+      "type_card": "Tipo de tarjeta",
+      "bank": "Banco del cliente",
+      "card_brand": "Marca de tarjeta",
+      "card": "4 dígitos de tarjeta"
+    },
+    "charge": {
+      "title": "Información de costos y comisiones",
+      "transaction_amount": "Monto de la transacción",
+      "rate": "Comisión tasa base (%)",
+      "rate_1": "Comisión sobre tasa",
+      "iva": "IVA"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+$visa-blue: #15195A;
+$visa-gray: #D4D4D4;
+$visa-gold: #FA9B00;
+
+$amex-blue: #0279C2;
+$amex-dark: #0E3B60;
+
+$carnet-red: #ED1C24;
+
+.card-icon-box {
+	display: inline-block;
+	border-radius: 6px;
+	background-color: white;
+	border: 1px solid #EFEFEF;
+	padding: 0 4px;
+	box-sizing: border-box;
+	overflow: hidden;
+
+	&.cib-visa {
+		background-color: $visa-gray;
+		border: 1px solid darken($visa-gray, 10%);
+
+		&.cib-visa-white {
+			background-color: $visa-blue;
+			border: 1px solid darken($visa-blue, 10%);
+		}
+
+		&.cib-visa-pos {
+			background-color: lighten($visa-gray, 20%);
+			border: 1px solid $visa-gray;
+		}
+
+		&.cib-visa-blue {}
+	}
+
+	&.cib-mc {
+		background-color: #FFFFFF;
+		border: 1px solid #DEDEDE;
+
+		&.cib-mc-black {
+			background-color: #000000;
+			border: 1px solid #000000;
+		}
+
+		&.cib-mc-white {}
+	}
+
+	&.cib-carnet {
+		background-color: $carnet-red;
+		border: 1px solid darken($carnet-red, 10%);
+	}
+
+	&.cib-amex {
+		background-color: $amex-blue;
+		border: 1px solid darken($amex-blue, 10%);
+		padding: 0;
+
+		&.cib-amex-small {
+			position: relative;
+
+			> svg {
+				height: 80%;
+				width: auto;
+				position: absolute;
+				right: 0;
+				top: 9%
+			}
+		}
+
+		&.cib-amex-regular {}
+	}
+}
+
+svg.amex-square {
+	background: $amex-blue;
+	padding: 8px 0;
+	box-sizing: content-box;
+}

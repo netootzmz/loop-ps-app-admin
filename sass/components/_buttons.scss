@@ -1,0 +1,538 @@
+@use "./../abtracts" as *;
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  display: inline-block;
+  transition: all 0.3s;
+  color: $color-grey-light;
+  box-shadow: $light-shadow;
+  padding: 0.8em 3em;
+  width: fit-content;
+  height: fit-content;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &:focus,
+  &:hover {
+    box-shadow: $emphasys-shadow;
+    transform: translateY(-1px);
+    outline: none;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &--icon {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      box-shadow: none;
+      transform: none;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  &--rounded {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    transition: all 0.2s;
+    position: relative;
+    background-color: $color-secondary;
+    color: $color-grey-light;
+
+    &__smart {
+      width: 40%;
+      margin-left: auto;
+
+      &:disabled {
+        background-color: rgba($color-secondary, 0.5);
+        color: $color-grey-light;
+      }
+
+      @include respond(tab-port) {
+        margin: 1rem 0;
+        width: 100%;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: inline-block;
+      background-color: inherit;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+
+    &:active,
+    &:focus {
+      transform: translateY(-1px);
+      box-shadow: 0 1rem 2rem rgba(#000, 0.2);
+    }
+  }
+
+  &--primary {
+    background: $color-primary;
+  }
+
+  &--secondary {
+    background: $color-secondary;
+  }
+
+  &--cancel {
+    background-color: $color-grey-dark;
+  }
+  &--adjustmentPrimary {
+    background-color: $color-primary;
+    padding: 5px 10px;
+    &:disabled {
+      background-color: rgba($color-primary, 0.5);
+      cursor: not-allowed;
+    }
+  }
+  &--arrow {
+    color: $color-primary;
+    font-size: 18px;
+  }
+  &--adjustmentSecondary {
+    background-color: $color-grey-dark;
+    padding: 5px 10px;
+    &:disabled {
+      background-color: rgba($color-grey-dark, 0.5);
+      cursor: not-allowed;
+    }
+  }
+
+  &--mailServer {
+    background-color: $color-secondary;
+    &:disabled {
+      background-color: rgba($color-secondary, 0.4);
+    }
+  }
+  &--modalConfirm {
+    background-color: $color-secondary;
+    border: none;
+    box-shadow: $light-shadow;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    justify-self: flex-start;
+    margin-left: 40px;
+    outline: none;
+    padding: 5px 10px;
+    &:disabled {
+      background-color: rgba($color-secondary, 0.4);
+    }
+  }
+
+  &--modalDelete {
+    background-color: $color-error;
+    border: none;
+    box-shadow: $light-shadow;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    justify-self: flex-start;
+    margin-left: 40px;
+    outline: none;
+    padding: 5px 10px;
+    &:disabled {
+      background-color: rgba($color-error, 0.4);
+    }
+  }
+
+  &--modalCancel {
+    background-color: $color-grey-dark;
+    border: none;
+    border-radius: 5px;
+    box-shadow: $light-shadow;
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    margin-right: 40px;
+    outline: none;
+    padding: 5px 10px;
+    &:disabled {
+      background-color: rgba($color-secondary, 0.4);
+    }
+  }
+
+  &--filter {
+    background-color: white;
+    color: $color-primary;
+    font-size: 12px;
+    width: auto;
+    text-align: center;
+    padding: 0.1rem 0.1rem;
+    border-bottom: 5px solid transparent;
+
+    &__active {
+      color: $color-secondary;
+      font-weight: bold;
+      border-bottom: 5px solid $color-secondary;
+    }
+  }
+
+  &--treasury {
+    align-items: center;
+    background-color: $color-secondary;
+    color: white;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+    padding: 5px 5px;
+  }
+  &--configureTreasury {
+    align-items: center;
+    color: rgba(blue, 0.7);
+    display: flex;
+    font-size: 1.22rem;
+    font-weight: 600;
+    justify-content: center;
+    padding: 5px;
+  }
+
+  &--default {
+    background: $color-grey-dark;
+    color: $color-grey-light;
+  }
+
+  &--error {
+    background: $color-error;
+    color: $color-grey-light;
+  }
+
+  &--clear {
+    background: $color-grey-dark;
+    color: $color-grey-light;
+    height: 35px;
+    width: 120px;
+    margin-top: 25px;
+  }
+
+  &--clean {
+    margin-top: -10px;
+
+    @include respond(tab-land) {
+      margin: 0 auto;
+    }
+  }
+
+  &--close {
+    border: 2px solid $color-primary;
+    border-radius: 100%;
+    color: $color-primary;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 5px;
+  }
+
+  &--disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    background: darken($color-grey-light, 12%);
+    color: $color-grey-dark;
+  }
+
+  &--back {
+    color: $color-primary;
+    padding: 1rem;
+
+    &:hover {
+      animation: wobble-c 0.8s both;
+    }
+  }
+
+  &--return {
+    color: $color-primary;
+    padding: 1rem;
+    position: absolute !important;
+    top: 0.1rem !important;
+    left: 0.5rem !important;
+
+    &:hover {
+      animation: wobble-d 0.8s both;
+      box-shadow: none !important;
+    }
+  }
+
+  &--card {
+    box-shadow: none;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 30px;
+    left: 45%;
+
+    @include respond(tab-port) {
+      top: 60%;
+      left: 10%;
+    }
+
+    @include respond(phone) {
+      top: 95%;
+      left: 45%;
+    }
+  }
+
+  &--dropdown {
+    color: $color-primary;
+    border-right: 2px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    display: flex;
+    padding: 0.5rem 1rem 0.5rem 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.3rem;
+    align-items: center;
+    width: fit-content;
+    font-weight: 300;
+
+    & > span {
+      margin-left: 1.5rem;
+    }
+
+    &:hover {
+      transform: translateY(-1px) translateX(-1px);
+      border-right: 2px solid $color-primary;
+      border-bottom: 1px solid $color-primary;
+      box-shadow: 2px 2px 4px rgba($color-primary, 0.4);
+    }
+  }
+
+  &--lang {
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    transition: all 0.3s;
+    backface-visibility: hidden;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 2px 2px 4px rgba($color-primary, 0.4);
+    }
+  }
+
+  &--small {
+    font-size: 1.1rem;
+  }
+
+  &--big {
+    width: 80%;
+    border-radius: 2rem;
+    padding: 1rem;
+
+    &::after {
+      border-radius: 2rem;
+    }
+
+    @include respond(phone) {
+      border-radius: 1rem;
+      width: 100%;
+      padding: 1.5rem;
+    }
+  }
+
+  &--expand {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-size: 4rem;
+    padding: 1rem 0 0.5rem 0;
+    line-height: 0.5;
+    color: $color-primary;
+    backface-visibility: hidden;
+
+    &:hover {
+      text-shadow: 0px 2px 4px rgba($color-secondary, 0.4);
+      color: $color-secondary;
+    }
+  }
+
+  &--action {
+    color: transparent;
+    width: fit-content;
+    line-height: 1;
+    height: fit-content;
+    padding: 0.8rem;
+    backface-visibility: hidden;
+
+    &:not(:last-child) {
+      margin-right: 0.8rem;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &--transactions {
+    color: $color-primary;
+    width: fit-content;
+    line-height: 1;
+    height: fit-content;
+    padding: 0.8rem;
+    backface-visibility: hidden;
+
+    &:not(:last-child) {
+      margin-right: 0.8rem;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &--nav {
+    color: $color-grey-light;
+    padding: 0.5rem 3rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s;
+    box-shadow: none;
+
+    & > span {
+      margin-left: 1rem;
+      padding-right: 2rem;
+    }
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    &::after {
+      content: "";
+      opacity: 0;
+      display: hidden;
+      height: 80%;
+      width: 7%;
+      background: $color-grey-light;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      border-radius: 3px;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active,
+    &--active {
+      background: darken($color-primary, 5%);
+
+      &:after {
+        opacity: 1;
+        display: inline-block;
+      }
+    }
+
+    &--active {
+      pointer-events: none;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      pointer-events: none;
+      color: $color-grey-dark;
+    }
+  }
+
+  &--file {
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    background-color: $color-primary;
+    font-size: 1rem;
+    height: auto;
+    border-radius: 0;
+
+    &:focus,
+    &:hover {
+      box-shadow: none;
+      transform: translateY(0);
+      outline: none;
+    }
+  }
+
+  &__group {
+    display: flex;
+    height: 100%;
+    background: $color-white;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0px 2px 4px rgba($color-primary, 0.3);
+
+    &-item {
+      border: none;
+      border-bottom: 3px solid transparent;
+      transition: all 0.3s ease;
+      display: inline-block;
+      border-radius: 0;
+      margin: 0;
+      padding: 1rem 2rem;
+      color: $color-grey-dark;
+      box-shadow: none;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+
+      &:hover {
+        transform: translateY(0) translateX(0);
+        border: none;
+        border-bottom: 3px solid $color-secondary;
+        box-shadow: 0px 2px 4px rgba($color-secondary, 0.4);
+        color: $color-secondary;
+      }
+
+      &--active {
+        color: $color-secondary;
+        pointer-events: none;
+        border-bottom: 3px solid $color-secondary;
+        box-shadow: 0px 2px 4px rgba($color-secondary, 0.4);
+      }
+    }
+  }
+}

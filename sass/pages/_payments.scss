@@ -1,0 +1,232 @@
+@use "./../abtracts"as *;
+
+.payments {
+	&__container {
+		display              : grid;
+		grid-template-columns: 1.5fr 1fr;
+		grid-template-rows   : min-content 1fr;
+		row-gap              : 2rem;
+		padding              : 4rem 8rem;
+		column-gap           : 4rem;
+		overflow-y           : auto;
+
+		@include respond (tab-land) {
+			grid-template-columns: 1fr;
+		}
+
+		@include respond (big-desktop) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&__mailContainer{
+		display              : grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows   : min-content 1fr;
+		row-gap              : 2rem;
+		padding              : 4rem 8rem;
+		column-gap           : 4rem;
+		overflow-y           : auto;
+
+		@include respond (tab-land) {
+			grid-template-columns: 1fr;
+		}
+
+		@include respond (big-desktop) {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	&__half {
+		width     : 80%;
+		column-gap: 4rem;
+	}
+
+	&__title {
+		margin-bottom: 1.5rem;
+	}
+
+	&__links {
+		grid-column: 1 / -1;
+	}
+
+	&__mail{
+		grid-column: 1fr 1fr;
+	}
+
+	&__buttons {
+		padding      : 1rem 0;
+		margin-left  : auto;
+		width        : fit-content;
+		margin-bottom: 3rem;
+	}
+
+	&__method {
+		width          : 80%;
+		display        : flex;
+		justify-content: center;
+	}
+
+	&__default {
+		margin-bottom: 2rem;
+		font-size    : 2rem;
+	}
+
+}
+
+.split {
+	height     : 100%;
+	width      : 50%;
+	position   : fixed;
+	z-index    : 1;
+	top        : 0;
+	overflow-x : hidden;
+	padding-top: 2rem;
+}
+
+.left {
+	left            : 0;
+	background-color: rgb(247, 239, 239);
+}
+
+.right {
+	right           : 0;
+	background-color: rgb(233, 229, 229);
+}
+
+.centered {
+	position  : absolute;
+	top       : 50%;
+	left      : 50%;
+	transform : translate(-50%, -50%);
+	text-align: center;
+}
+
+.dynamic-card-container {
+	display        : flex;
+	align-items    : center;
+	justify-content: center;
+	user-select    : none;
+	padding        : 15px 0 30px;
+
+	>.card {
+		border-radius: 7px;
+		background   : transparent linear-gradient(300deg, #b2b2b2 0%, #EFEFEF 100%) 0 0 no-repeat padding-box;
+		box-shadow   : 3px 7px 12px #00000036;
+		width        : 201px;
+		height       : 121px;
+		padding      : 10px 10px 5px;
+		color        : #474747;
+		display      : flex;
+		font-family  : sans-serif;
+		font-size    : 0.8rem;
+		transition   : all 0.5s ease;
+		zoom         : 1.3;
+
+		>header {
+			display   : flex;
+			min-height: 15px;
+		}
+
+		>section {
+			display       : block;
+			margin-top    : auto;
+			margin-bottom : -20px;
+			text-align    : center;
+			letter-spacing: 0.12rem;
+			font-family   : 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+			font-size     : 0.81rem;
+			white-space   : nowrap;
+			position      : relative;
+
+			>.cc-amex-csc {
+				position      : absolute;
+				top           : -10px;
+				right         : 5px;
+				font-size     : 0.6rem;
+				letter-spacing: 0.08rem;
+				font-family   : 'Arial Condensed', sans-serif;
+			}
+		}
+
+		>footer {
+			display   : flex;
+			margin-top: auto;
+
+			.cc-name {
+				display: inline-block;
+				width  : calc(100% - 40px);
+
+				>span {
+					display       : inline-block;
+					height        : 15px;
+					text-overflow : ellipsis;
+					white-space   : nowrap;
+					width         : 100%;
+					overflow      : hidden;
+					text-transform: uppercase;
+					font-family   : 'Arial Condensed', sans-serif;
+				}
+			}
+
+			.cc-exp {
+				display    : inline-block;
+				margin-left: auto;
+				width      : 35px;
+				white-space: nowrap;
+
+				>span {
+					font-family: 'Arial Condensed', sans-serif;
+				}
+			}
+
+			small.title {
+				text-transform: uppercase;
+				display       : block;
+				font-size     : 60%;
+				color         : #707070;
+
+				&.animate__animated {
+					animation-delay: 0.5s;
+				}
+			}
+		}
+	}
+
+	>.card.cc-blue {
+		background: transparent linear-gradient(300deg, #0C71C9 0%, #3196D7 100%) 0 0 no-repeat padding-box;
+		color     : #ffffff;
+
+		>footer small.title {
+			color: #b0c4d3;
+		}
+	}
+
+	>.card.cc-dark-blue {
+		background: transparent linear-gradient(300deg, #1f2270 0%, #4679ca 100%) 0 0 no-repeat padding-box;
+		color     : #ffffff;
+
+		>footer small.title {
+			color: #91a3c8;
+		}
+	}
+
+	>.card.cc-green {
+		background: transparent linear-gradient(300deg, #235E3D 0%, #92BC99 100%) 0 0 no-repeat padding-box;
+		color     : #ffffff;
+
+		>footer small.title {
+			color: #13401e;
+		}
+	}
+
+	>.card.cc-orange {
+		background: transparent linear-gradient(300deg, #9f1914 0%, #D2541D 100%) 0 0 no-repeat padding-box;
+		color     : #ffffff;
+
+		>footer small.title {
+			color: #b6a98e;
+		}
+	}
+
+}

@@ -1,0 +1,144 @@
+{
+  "admin_cuenta": {
+    "access": true,
+    "default_link": "/account/password",
+    "pages": {
+      "preferences": {
+        "access": false
+      },
+      "password": {
+        "access": true,
+        "edit": true
+      }
+    }
+  },
+  "system_config": {
+    "access": true,
+    "default_link": "/link",
+    "pages": {
+      "generals": {
+        "access": true,
+        "edit": true
+      },
+      "portal_access": {
+        "access": true,
+        "edit": true
+      },
+      "checkout": {
+        "access": true,
+        "edit": true,
+        "default_link": "/link",
+        "pages": {
+          "params": {
+            "access":true,
+            "edit": true
+          },
+          "identity": {
+            "access":true,
+            "edit": true
+          },
+          "payments": {
+            "access": true,
+            "default_link": "/link",
+            "pages": {
+              "params": {
+                "access": true,
+                "default_link": "/link",
+                "pages": {
+                  "behaivor": {
+                    "access":true,
+                    "edit": true
+                  },
+                  "allow_msi": {
+                    "access":true,
+                    "edit": true
+                  },
+                  "validity": {
+                    "access":true,
+                    "edit": true
+                  },
+                  "get_client_data": {
+                    "access":true,
+                    "edit": true
+                  }
+                }
+              },
+              "identity": {
+                "access":true,
+                "edit": true
+              }
+            }
+          },
+          "users": {
+            "access":true,
+            "edit": true
+          },
+          "profiles": {
+            "access":true,
+            "edit": true
+          }
+        }
+      }
+    }
+  },
+  "payments": {
+    "access": true,
+    "default_link": "/link",
+    "pages": {
+      "generate": {
+        "access": true,
+        "default_link": "/link",
+        "pages": {
+          "individuals": {
+            "access": true
+          },
+          "by_file": {
+            "access": true
+          }
+        }
+      },
+      "status": {
+        "access": true
+      },
+      "checkout": {
+        "access": true
+      }
+    }
+  },
+  "transactions": {
+    "access": true,
+    "default_link": "/link",
+    "pages": {
+      "reports": {
+        "access": true,
+        "cancel": true
+      }
+    }
+  },
+  "clients": {
+    "access": true,
+    "default_link": true,
+    "pages": {
+      "create": {
+        "access": true,
+        "edit": true
+      },
+      "conditions": {
+        "access": true,
+        "edit": true
+      },
+      "bank_data":{
+        "access": true,
+        "edit": true
+      },
+      "afiliation_data": {
+        "access": true,
+        "edit": true
+      },
+      "solution_data": {
+        "access": true,
+        "edit": true
+      }
+    }
+  }
+}

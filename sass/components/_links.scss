@@ -1,0 +1,225 @@
+@use "./../abtracts" as *;
+
+.link {
+  &:link,
+  &:visited {
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    color: $color-primary;
+    text-decoration: none;
+    border-right: 2px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin: 0.5rem;
+    display: inline-block;
+  }
+
+  &:hover {
+    transform: translateY(-1px) translateX(-1px);
+    border-right: 2px solid $color-primary;
+    border-bottom: 1px solid $color-primary;
+    box-shadow: 2px 2px 4px rgba($color-primary, 0.4);
+  }
+
+  &__group {
+    background: $color-white;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0px 2px 4px rgba($color-primary, 0.3);
+
+    &-item {
+      &:link,
+      &:visited {
+        border: none;
+        border-bottom: 3px solid transparent;
+        transition: all 0.3s ease;
+        display: inline-block;
+        border-radius: 0;
+        margin: 0;
+        padding: 1rem 2rem;
+        color: $color-grey-dark;
+      }
+
+      &:hover {
+        transform: translateY(0) translateX(0);
+        border: none;
+        border-bottom: 3px solid $color-secondary;
+        box-shadow: 0px 2px 4px rgba($color-secondary, 0.4);
+        color: $color-secondary;
+      }
+
+      &--active {
+        &:link,
+        &:visited {
+          color: $color-secondary;
+          pointer-events: none;
+          border-bottom: 3px solid $color-secondary;
+          box-shadow: 0px 2px 4px rgba($color-secondary, 0.4);
+        }
+      }
+    }
+  }
+
+  &--logo {
+    &:link,
+    &:visited {
+      margin: 1.2rem 0.3rem;
+      color: $color-grey-light;
+      background: transparent;
+      border: none;
+    }
+
+    &:hover {
+      //transform : translate(0) scale(1.1);
+      animation: jello 0.9s both;
+      border: none;
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &--dropdown {
+    &:link,
+    &:visited {
+      display: flex;
+      padding: 0.5rem 1rem 0.5rem 0;
+      margin: 0;
+      font-weight: 300;
+      font-size: 1.3rem;
+      align-items: center;
+      width: fit-content;
+
+      & > span {
+        margin-left: 1.5rem;
+      }
+    }
+  }
+
+  &--small {
+    &:link,
+    &:visited {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.navlink {
+  &:link,
+  &:visited {
+    color: $color-grey-light;
+    padding: 0.5rem 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s;
+
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
+
+    &::after {
+      content: "";
+      opacity: 0;
+      display: hidden;
+      height: 2.9rem;
+      width: 21%;
+      background: $color-grey-light;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+      border-radius: 3px;
+      transition: all 0.3s;
+    }
+  }
+
+  &:hover,
+  &:active,
+  &--active:link,
+  &--active:visited {
+    background: darken($color-primary, 5%);
+
+    &:after {
+      opacity: 1;
+      display: inline-block;
+    }
+  }
+
+  &--active:link,
+  &--active:visited {
+    pointer-events: none;
+  }
+}
+
+.menulink {
+  &:link,
+  &:visited {
+    padding: 0.5rem 0;
+    padding-left: 3rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    white-space: nowrap;
+    color: $color-primary;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    width: 95%;
+    position: relative;
+    border-radius: 0 5px 5px 0;
+    overflow: hidden;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: rgba($color-grey-dark, 0.3);
+    transform: scaleY(0);
+    transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+  }
+
+  &:hover::before,
+  &--active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+
+  &:active::before {
+    background-color: rgba($color-grey-dark, 0.3);
+  }
+
+  &:hover,
+  &--active:link,
+  &--active:visited {
+    color: $color-secondary;
+  }
+
+  &--active:link,
+  &--active:visited {
+    pointer-events: none;
+  }
+
+  &__container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    color: inherit;
+
+    & > * {
+      z-index: 100;
+    }
+  }
+
+  &__text {
+    margin-left: 1rem;
+  }
+}

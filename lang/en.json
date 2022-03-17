@@ -1,0 +1,729 @@
+{
+  "titles": {
+    "loading": "Loading...",
+    "main": "Home",
+    "account": {
+      "main_title": "Account settings",
+      "change_password": "Change password",
+      "preferences": "Preferences"
+    },
+    "payments": {
+      "main_title": "Distance Payments",
+      "generate": "Generate distance payments",
+      "status": "Distance payments status",
+      "parameters":{
+        "hours": "Hours",
+        "days": "Days",
+        "weeks": "Weeks",
+        "months": "Months",
+        "time_unit": "The time unit is required",
+        "validity": "Validity",
+        "validityMessage": "The validity is required",
+        "concept":"Concept",
+        "conceptMessage": "The concept is required",
+        "referenceMessage": "The reference is required",
+        "valid_quantity": "It must be a valid quantity",
+        "generate_link": "Generate payment link",
+        "time_unity":"Measure time unity",
+        "unity": "Unity",
+        "value": "Value",
+        "validity_link":"The links will have a validity of",
+        "sale_concept": "Sale concept",
+        "max_characters": "The maximun length is 120 characters",
+        "amount":"Amount",
+        "sale_reference": "Sale reference",
+        "reference":"Reference",
+        "months_without": "Months without interest",
+        "accept":"Accept",
+        "not_accept":"Not accept",
+        "three_months":"3 months",
+        "six_months":"6 months",
+        "nine_months":"9 months",
+        "twelve_months":"12 months",
+        "clean":"Clean",
+        "generate": "Generate",
+        "send_link": "Send payment link",
+        "payment_link": "Payment link",
+        "email":"Email",
+        "send": "Send"
+      }
+    },
+    "reports": {
+      "main_title": "Inquiries and reports",
+      "transactions": "Transactions report",
+      "deposits_and_movements": "Deposits and Movements"
+    },
+    "adjustment": {
+      "main_title": "Monetary adjustment",
+      "types": "Register type of adjustments",
+      "reports" : "Applied adjustment reports",
+      "configuration": "Amount configurations",
+      "manual": "Manual adjustments",
+      "auth": "Authorize manual adjustments",
+      "massive": "Massive adjustments",
+      "authMassive": "Authorize massive adjustments",
+      "parameters":{
+        "processing":"Processing",
+        "saveQuestion": "¿Are you sure you want to Save/Modify?",
+        "user": "User",
+        "nature": "Nature",
+        "individualAmount": "Individual Amount",
+        "noCancel": "No, cancel",
+        "yesCancel": "Yes, continue",
+        "limitSave": "Successfully saved the limit amounts",
+        "errorLimit": "The daily amount limit can't be minor than the individual amount, please verify",
+        "notAmount": "Sorry, we can't regist the limit amount, please verify that all the inputs have a value",
+        "dailyAmount": "Individual amount for daily adjusts",
+        "amount": "Amount",
+        "totalDaily": "Total amount for daily adjusts",
+        "cancel": "Cancel",
+        "save": "Save",
+        "daily": "Individual amount fot adjust",
+        "totalAdjust": "Total amount for daily adjusts",
+        "edit": "Edit",
+        "saveConfirm": "¿Are you sure you want to save/modify the type of adjusts",
+        "authorize": "Yes, authorize",
+        "saveAdjust": "Adjust type successfully saved",
+        "errorProcess": "The process fail, please try again",
+        "errorRegist": "Sorry, we can't regist the adjust type, please verify all tht fields have a value",
+        "dataFound": "Data found",
+        "dataNotFound": "Data not found",
+        "selectFilter": "Please select at least one filter",
+        "dontObtain": "Sorry, we can't find the categories",
+        "dontNature": "Sorry, we can't find the nature options",
+        "status": "Status",
+        "category": "Category",
+        "categoryName": "Category Name",
+        "categoryRegist": "Regist ategory",
+        "processWrong":"The process failed, please try again",
+        "nameRequired":"Category name required",
+        "success": "Success",
+        "categorySave": "Category successfully saved",
+        "actionQuestion": "¿Are you sure to apply this action?",
+        "continue": "Continue",
+        "delete": "Delete",
+        "mustSelect": "You need to select a category",
+        "deleteQuestion": "¿Are you sure you want to delete",
+        "deleteSuccessfully": "Category successfully deleted",
+        "registAdjust": "Regist adjust type",
+        "adjustType": "Adjust type",
+        "newAdjustType": "New adjust type",
+        "newCategory": "New category",
+        "deleteCategory": "Delete category",
+        "nameAdjustType": "Name adjust type",
+        "search": "Search",
+        "clean": "Clean",
+        "createdBy": "Created by",
+        "logs": "Logs",        
+        "selectFile": "Select a file to ",
+        "load": "Load",
+        "analyze": "Analyze",
+        "download": "Download",
+        "downloadLayout": "Download the layout file to massive adjust download",
+        "commerceName":"Commerce Name",
+        "idCommerce": "Commerce ID",
+        "adjustLine": "Adjust line",
+        "debitLine": "Debit line",
+        "solution":"Solution",
+        "name": "Name",
+        "approve_status":"Approval status",
+        "application_status":"Application status",
+        "final_date": "Final date",
+        "initial_date": "Initial date",
+        "payment_status": "Payment status",
+        "link_status": "Link status",
+        "not_pay": "Not pay",
+        "pay": "Pay",
+        "active": "Active",
+        "canceled": "Canceled",
+        "expired": "Expired",
+        "wait": "Please wait a minute while we prepare the file",
+        "filters": "Filters",
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "current_week": "Current week",
+        "current_month": "Current month",
+        "last_month": "Last month",
+        "date_range":"Date range",
+        "individual": "Individual",
+        "per_file": "Per file"      
+      }
+    },
+    "colors":{
+      "link": "Distance payment link",
+      "commerceName": "Nombre del comercio",
+      "commerceAddress": "Address",
+      "commerceAddressStore": "Store Address",
+      "commerceMail": "Email",
+      "greetings": "¡Hello!",
+      "details": "Your transaction resume are:",
+      "date": "Date and hour:",
+      "concept": "Sale concept:",
+      "number": "Reference number:",
+      "amount": "Transaction Amount:",
+      "linkDate": "Link available until:",
+      "proves": "Proves ABP",
+      "payment": "Pay",
+      "question": "¿Do you have any question, can we help you with something?",
+      "attention": "Please contact us, we can help you to solve you doubts"
+    },
+    "dispersion":{
+      "main_title":"Dispersion",
+      "dispersion_file": "Dispersion File",
+      "pending_payments":"Pending Payments"
+    },
+    "conciliation":{
+      "main_title": "Conciliation",
+      "digits": "Liquidation and Control Data",
+      "detail": "Movements detail",
+      "liquidation_log": "Liquidation log",
+      "dispersion": "Dispersion report",
+      "liquidation_detail": "Liquidation detail",
+      "log": "Conciliation log",
+      "configuration": "Files and process configuration",
+      "parameters": {
+        "processing": "Processing",
+        "not_found": "No records found",
+        "bank_select": "Please, select a transmitter",
+        "control_title": "Control, conciliation and liquidation digits",
+        "date_range": "Date range",
+        "trasmitter_placeholder": "All",
+        "transmitter_label":"Bank",
+        "all_placeholder":"All",
+        "status_placeholder":"Status",
+        "status_conciliated": "Conciliated",
+        "status_not_conciliated": "No Conciliated",
+        "conciliation_manual":"Manual",
+        "conciliation_auto": "Authomatic",
+        "conciliation_auto_no_accent":"Authomatic",
+        "conciliation_placeholder": "Conciliation type",
+        "register_placeholder": "Registers",
+        "clean_button": "Clear",
+        "search_button": "Search",
+        "download_button": "Download",
+        "date_txn": "Txn Date",
+        "bank": "Bank",
+        "no_txn_smart": "Smart Txn Number",
+        "smart_amount": "Smart Amount",
+        "no_txn_bank": "Bank Txn Number",
+        "bank_amount": "Bank Amount",
+        "chargeback": "Chargeback",
+        "refund": "Refund",
+        "total_bank": "Total Bank",
+        "total_treasury": "Toltal Treasury",
+        "concile": "Concile",
+        "conciliation_note": "Conciliation note",
+        "conciliation": "Conciliation",
+        "question_download": "Do you want to download this file?",
+        "confirm_download": "Yes, download",
+        "deny_download": "No, cancel",
+        "success": "Success",
+        "success_download": "File successfully downloaded",
+        "error": "Error",
+        "error_download": "There aren't files to download",
+        "treasury_title": "Treasury new amount",
+        "treasury_placeholder": "New amount",
+        "treasury_cancel": "Cancel",
+        "treasury_save": "Save",
+        "treasury_not_register": "The new treasury amount cant be register corrrectly",
+        "treasury_not_obtain": "Connection fail with the MS",
+        "treasury_not_over": "The amount must be over 0",
+        "dispersion_found": "Dispersion found",
+        "dispersion_not_found": "Not dispersion founded",
+        "dispersion_error": "An error has ocurred, please try again",
+        "dispersion_title": "Filters",
+        "dispersion_merchant": "Merchant number",
+        "dispersion_date": "Date of creation of dispersion file",
+        "dispersion_file": "Dispersion file name",
+        "dispersion_user": "User name",
+        "dispersion_generated": "Generated files",
+        "modal_activity": "Activity",
+        "modal_user": "User",
+        "modal_date": "Date and hour",
+        "modal_title": "Conciliation registers",
+        "modal_download": "Download",
+        "manual_conciliation": "Manual conciliation",
+        "table_conciliation": "Conciliation",
+        "table_liquidation": "Liquidation",
+        "table_total": "Total liquidation",
+        "approve_status": "Approval status",
+        "application_status": "Application status",
+        "adjust_name": "Name adjust type",
+        "adjust_amount": "Amount",
+        "nature": "Nature",
+        "idCommerce": "Commerce ID",
+        "commerceName": "Commerce Name",
+        "solution": "Solution",
+        "captureDate": "Capture Date",
+        "userCapture": "Capture User",
+        "authorize": "Auhtorize",
+        "user_authorize": "User Authorize",
+        "date_authorize": "Authorization date",
+        "total_amount_charge": "Total charge amount",
+        "total_amount_payment": "Total payment amount",
+        "decline": "Decline" ,
+        "found_info":"Information found",
+        "regist_conf":"Add configuration of file",
+        "layout_name":"Layout name",
+        "description": "Description",
+        "transaction_key": "Transaction key",
+        "transaction_template": "Transaction template",
+        "document_header":"Document header",
+        "regist_num":"Register number",
+        "regist_state":"Register state",
+        "regist_separator":"Register separator",
+        "acquirer":"Acquirer",
+        "select":"Seleccione",
+        "save":"Save",
+        "file_configurations":"Files configuration",
+        "description_layout": "Layout description",
+        "user_register": "User register",
+        "status":"Status",
+        "date_register":"Date Register",
+        "actions":"Actions",
+        "cancel":"Cancel",
+        "correct_send": "Manual conciliation correctly sended",
+        "error_send": "We can't realice the manual conciliation",
+        "more_than_zero":"It must be a number and with a value higher than 0",
+        "notes":"Notes",
+        "enter_description": "Please enter a description",
+        "ms_error": "Connection error with the MS",
+        "no_data": "There is no info in the DB",
+        "treasury_update": "Total treasury updated",
+        "date_invalid": "You must select a valid date range"            
+      }     
+    },
+    "commerce": {
+      "main_title": "Commerce"
+    },
+    "profile": {
+      "preferences": {
+        "title": "System configurations",
+        "checkout": {
+          "title": "Checkout",
+          "parameters":{
+            "title":"Parameters",
+            "configuration_msi":"Months without interest configuration",
+            "allow_msi":"Allow months without interests",
+            "accept":"Accept",
+            "not_accept":"Not accept",
+            "cancel":"Cancel",
+            "save":"Save",
+            "message": "Message"
+          },
+          "visual_identity": "Visual identity",
+          "mails": "Mails"
+        },
+        "general": {
+          "title": "Generals",
+          "visual_identity": "Visual identity",
+          "mails": "Mails",
+          "mail_service": "Mail service",
+          "parameters":{
+            "processing":"Processing",
+            "requiredFile":"This field is required",
+            "invalidMail": "Invalid Mail",
+            "success":"Success",
+            "load_error": "Error loading information",
+            "protocol": "Protocol",
+            "configuration": "Configuration",
+            "mail_server": "Output mail server name",
+            "port": "Port",
+            "security": "Security",
+            "security_protocol": "Security protocol",
+            "authentication": "Autenticación",
+            "user":"User",
+            "password":"Password",
+            "cancel":"Cancel",
+            "save":"Save",
+            "design_assistant": "Mail design assistant",
+            "use_assistant":"Use design assistant",
+            "own_design": "Load muy own HTML files",
+            "visual_identity":"Mail visual identity",
+            "top_logo":"Top logo",
+            "file_location": "File location",
+            "examine":"Examine",
+            "must_be":"It must be a file",
+            "file_limitations":" with a size of 400 kb or less and a maximum size of 600px x 600px.",
+            "mail_border": "Mail border",
+            "select_border": "Select a border",
+            "separator":"Separator",
+            "mail_colors":"Mail colors",
+            "mail_body":"Mail body",
+            "body_typography":"Body typography",
+            "mail_footer":"Mail footer",
+            "footer_typography":"Footer typography",
+            "action_buttons":"Action buttons",
+            "buttons_typography":"Buttons typography",
+            "mail_preview":"Mail preview",
+            "open_desktop":"Open desktop view"
+          }
+        },
+        "portal_access": {
+          "title": "Acceso to the portal",
+          "first_login": "First login",
+          "verification_code": "Verification code",
+          "restored_password": "Restored password"
+        },
+        "profiles": {
+          "title": "Profiles"
+        },
+        "remote_payments": {
+          "title": "Remote payments",
+          "payment_links": "Payment links",
+          "reports": "Link payment status",
+          "parameters": "Parameters",
+          "visual_identity": "Visual identity",
+          "mail_payment_link": "Mail payment link",
+          "proof_of_payment": "Proof of payment",
+          "sms": "SMS",
+          "parameter":{
+            "processing":"Processing",
+            "hour":"Hour",
+            "day":"Day",
+            "week":"Week",
+            "month":"Month",
+            "cancel":"Cancel",
+            "save":"Save",
+            "requiredFile":"This field is required",
+            "invalidMail":"Invalid Mail",
+            "success":"Success",
+            "load_error":"Error loading information",
+            "personalize_texts":"Personalize texts",
+            "header_text":"Header text",
+            "title":"Title",
+            "line_one":"Line 1",
+            "line_two":"Line 2",
+            "end_body":"End body message",
+            "message":"Message",
+            "footer":"Footer",
+            "footer_line_one":"Footer line 1",
+            "telephone":"Telephone",
+            "mail":"Mail",
+            "disclaimer":"Disclaimer",
+            "mail_preview":"Mail preview",
+            "remote_payment_link":"Remote payment link",
+            "commerceName":"Commerce Name",
+            "commerceAddress":"Address: <commerce address>",
+            "greetings":"¡Hello!",
+            "details":"Your transaction resume are:",
+            "date":"Date and hour:",
+            "sale_concept": "Sale concept",
+            "reference_number":"Reference number:",
+            "transaction_amount":"Transaction amount:",
+            "link_available":"Link available until:",
+            "do_payment":"Do payment",
+            "question":"¿Do you have any question, can we help you with something?",
+            "attention":"Please contact us, we can help you to solve you doubts",
+            "top_separator": "Top separator",
+            "disclaimer_default": "This message is informative \n If you don't want to receive more mails...",
+            "smart_logo":"Smart logo",
+            "remote_payments": "Remote payments",
+            "ticket": "Here is the transaction resume",
+            "thanks": "Thank you for your purchase",
+            "sale":"Sale",
+            "tip":"Tip",
+            "total":"Total",
+            "approved":"Approved",
+            "authorization":"Authorization",
+            "affiliation_number": "Affiliation number",
+            "transaction_type": "Transaction type",
+            "payment_date":"Payment date",
+            "folio":"Folio",
+            "card_number":"Card number",
+            "transmitter":"Transmitter",
+            "acquirer":"Acquirer",
+            "card_type":"Card type",
+            "product":"Product",
+            "account_status":"The account status could present the charge from Smart Payment Services",
+            "single_payment":"Single payment. By this promissory note is obligatory to pay the order to the creditable bank the amount of this title. This promissore note came from the credit opening contract with the cardholder.",
+            "dont_recognize":"¿If you don't recognize this operation \n Please contact us at Smart contact 55 5351 8420 or 800 34 76278 \n This mail is informative, please do not respond to this email address \n because it's not available to receive messages",
+            "client_data":"Client Data",
+            "payment":"Payment",
+            "top_logo":"Top logo",
+            "file_location":"File location",
+            "examine":"Examine",
+            "must_be":"It must be a file",
+            "file_limitations":" with a size of 400 kb or less and a maximum size of 600px x 600px.",
+            "colors":"Colors",
+            "body_typography":"Body typography",
+            "help_text_typography":"Help texts typography",
+            "body_resume":"Body resume",
+            "resume_typography":"Resume typography",
+            "action_buttons":"Action buttons",
+            "buttons_typography":"Buttons typography",
+            "preview":"Preview",
+            "open_desktop":"Open desktop view"     
+          }
+        },
+        "users": {
+          "title": "Users"
+        }
+      }
+    }
+  },
+  "payments": {
+    "individual": {
+      "generate": {
+        "validity": {
+          "unit": {
+            "placeholder": "Unit",
+            "error_empty": "Unit is missing",
+            "error_not_unit": "This field can not be empty"
+          },
+          "value": {
+            "placeholder": "Value",
+            "error_empty": "Value is missing",
+            "error_not_value": "This field can not be empty"
+          }
+        },
+        "concept": {
+          "placeholder": "Concept",
+          "error_empty": "Concept is missing",
+          "error_not_concept": "This field can not be empty"
+        },
+        "reference": {
+          "placeholder": "Referencia",
+          "error_empty": "Reference is missing",
+          "error_not_reference": "This field can not be empty"
+        },
+        "amount": {
+          "placeholder": "Monto",
+          "error_empty": "Amount is missing",
+          "error_not_amount": "This field can not be empty"
+        }
+      },
+      "send": {
+        "payment_link": {
+          "placeholder": "Payment link"
+        },
+        "send_method": {
+          "placeholder": "Send method",
+          "error_empty": "Method is missing",
+          "error_not_method": "This field can not be empty"
+        },
+        "email": {
+          "placeholder": "Email",
+          "error_empty": "Email is missing",
+          "error_not_email": "This field can not be empty"
+        }
+      }
+    },
+    "remote": {
+      "configuration": {
+        "main_label": "Configuration",
+        "behavior_after_shipment": {
+          "main_label": "Behavior after shipment",
+          "blocking": "Blocking",
+          "non_blocking": "Non_blocking"
+        },
+        "allow_months_without_interest": {
+          "main_label": "Allow months without interest",
+          "allow": "allow",
+          "do_not_allow": "Do not allow",
+          "minimum_amount": "Minimum amount",
+          "three_months": "3 months",
+          "six_months": "6 months",
+          "nine_months": "9 months",
+          "twelve_months": "12 months",
+          "error_minimum_amount_higher": "This amount should be higher than the previous ones"
+        },
+        "default_vigency": {
+          "main_label": "Default vigency",
+          "set_up": "Set up",
+          "do_not_set_up": "Do not set up",
+          "allow_edit": "Allow edit",
+          "unit": "Unit",
+          "value": "Value"
+        },
+        "cardholder": {
+          "main_label": "Request cardholder data",
+          "require": "Require",
+          "don_not_require": "No require"
+        }
+      }
+    }
+  },
+  "cookies": {
+    "title": "This website uses cookies",
+    "text": "Cookies on this website are used to personalize content and advertisements, provide social media features, and analyze traffic. In addition, we share information about your use of the website with our social media partners, advertising and web analytics, who may combine it with other information that you have provided to them or that they have collected from your use of their services.",
+    "button": "Agree",
+    "link": "See more information"
+  },
+  "login": {
+    "title": "Login",
+    "inputs": {
+      "email": {
+        "placeholder": "User",
+        "error_empty": "This field can not be empty",
+        "error_not_email": "Not a valid email"
+      },
+      "password": {
+        "placeholder": "Password",
+        "error_empty": "This field can not be empty",
+        "error_lenght": "The password must contain a minimum of 6 characters"
+      }
+    },
+    "submit": "Login",
+    "link": "Forgot your password?"
+  },
+  "forgot": {
+    "title": "Recover your password",
+    "subtitle": "Enter your email",
+    "input": {
+      "placeholder": "Email",
+      "error_empty": "This field can not be empty",
+      "error_not_email": "Not a valid email"
+    },
+    "swalbox": {
+      "title": "Success",
+      "text_1": "An email has been sent to ",
+      "text": " check your inbox, if you do not receive an email contact your administrator",
+      "button": "Continue",
+      "error": "An error ocurred, please try again later"
+    },
+    "submit": "Recover password",
+    "link": "Go back"
+  },
+  "recover": {
+    "title": "Hello!",
+    "head": "Update your password",
+    "inputs": {
+      "password": {
+        "placeholder": "New password"
+      },
+      "confirm": {
+        "placeholder": "Repeat your password",
+        "error": "You must confirm your password"
+      }
+    },
+    "swalbox": {
+      "title": "Success",
+      "text": "Login with your new password",
+      "button": "Continue",
+      "error": "An error ocurred, please try again later"
+    },
+    "submit": "Continue",
+    "link": "Login"
+  },
+  "password_validation": {
+    "minLength": "Must contain between 8 and 20 characters",
+    "digit": "It must have at least one digit",
+    "lowercase": "It must have at least one lower case",
+    "uppercase": "It must have at least one capital letter",
+    "special": "Must have at least one special character (@#$%^&+=)",
+    "nowhitespace": "It should not contain blank spaces",
+    "norepeat": "You should not repeat letters consistently",
+    "norepeatnumbers": "It must not have consecutive numbers",
+    "norepeatcharacters": "It must not contain repeat letters consecutively",
+    "noinverserepeatnumbers": "It must not have consecutive numbers",
+    "noinverserepeatcharacters": "It must not contain repeat letters consecutively"
+  },
+  "user_menu": {
+    "account": "Manage account",
+    "system": "System configurations",
+    "logout": "Logout"
+  },
+  "home": {
+    "welcome": {
+      "name": "Hello",
+      "title": "Welcome to Smart website!",
+      "msg": "We are the best on payments management"
+    },
+    "contact": {
+      "title": "Need help?",
+      "msg": "Our team is ready to support you with all your questions.",
+      "times": {
+        "title": "Business hours",
+        "ss": "24 hours a day, 7 days a week."
+      },
+      "mail": "Send us an email to"
+    }
+  },
+  "changePassword": {
+    "menu": {
+      "title": "Manage account",
+      "pp": "Personal preferences",
+      "cp": "Change password"
+    },
+    "password_text": "Enter a password of at least 8 characters, it must include at least one uppercase, one lowercase, one number and one special character",
+    "inputs": {
+      "currentpass": "Curren password",
+      "password": "New password",
+      "confirm": "Repeat the password",
+      "error": "This field is required"
+    },
+    "swalbox": {
+      "title": "Success",
+      "text": "Your password was updated",
+      "button": "Continue",
+      "error": "An error ocurred, please try again later"
+    },
+    "submit": "Change password"
+  },
+  "cardDetail": {
+    "nav": {
+      "client": "Customer",
+      "note": "Ticket",
+      "transaction": "Transaction",
+      "card": "Brand",
+      "payment": "Payment"
+    },
+    "client": {
+      "title": "Customer information",
+      "email": "Email",
+      "phone": "Phone",
+      "name": "Customer name",
+      "address": "Address",
+      "pay": "Payment"
+    },
+    "note": {
+      "text": "We appreciate your buy",
+      "sale": "Sale",
+      "tip": "Perquisite",
+      "total": "Total",
+      "authorization": "Authorization",
+      "membership": "Membership",
+      "type_transaction": "Type transaction",
+      "date_payment": "Payment date",
+      "reference": "Reference",
+      "folio": "Folio",
+      "card": "Brand",
+      "transmitter": "Company",
+      "acquirer": "Acquirer",
+      "eci": "ECI",
+      "type_brand": "Type Brand",
+      "product": "Product",
+      "footer": "The statement could show the charge by SMARTPY* ",
+      "footer_1": "Payment in a single exhibition. for this promissory note an unconditional obligation is taken to pay the order to the creditable bank of the amount of this title. This promissory note proceeds to the credit opening contract that the bank has entered into with the cardholder."
+    },
+    "transaction": {
+      "title": "Transaction information",
+      "result": "Transaction result",
+      "response": "Response",
+      "transaction_date": "Date",
+      "transaction_hour": "Hour",
+      "product": "Product",
+      "payment_method": "Payment method",
+      "payment_type": "Type of sale",
+      "payment_total": "Charge amount",
+      "order_id": "Order",
+      "authorization": "Authorization",
+      "reference": "Reference"
+    },
+    "brand": {
+      "title": "Card information",
+      "type_card": "Card type",
+      "bank": "Customer bank",
+      "card_brand": "Card brand",
+      "card": "Card digits"
+    },
+    "charge": {
+      "title": "Cost and commission information",
+      "transaction_amount": "Transaction amount",
+      "rate": "Base rate commission  (%)",
+      "rate_1": "Commission on rate",
+      "iva": "Tax"
+    }
+  }
+}

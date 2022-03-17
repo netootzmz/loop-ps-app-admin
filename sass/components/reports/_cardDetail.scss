@@ -1,0 +1,82 @@
+@use './../../abtracts'as *;
+
+.detail {
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 60%;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  &__nav {
+    padding: 8rem 2rem;
+    border-radius: 5rem 0 0 5rem;
+    background: #354a5e;
+  }
+
+  &__card {
+    background: $color-grey-light;
+  }
+
+  &__link {
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  &__text {
+    color: $color-white;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+}
+
+.buttonLink {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 1.5rem 0;
+  display: flex;
+  width: 100%;
+  position: relative;
+  transition: all .3s;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &:hover {
+    background: darken($color-primary, 5%);
+    border-left: solid 6px $color-grey-light;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: darken($color-primary, 5%);
+    border-left: solid 6px $color-grey-light;
+  }
+
+}
+
+.container {
+  height       : 100vh;
+  width        : 1vw;
+  z-index      : 1500;
+  border-radius: 50%;
+  display      : block;
+  transform    : scale(1200);
+  background   : rgba($color-grey-dark, .3);
+  cursor       : default;
+
+}
+
+
+

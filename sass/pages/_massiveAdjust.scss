@@ -1,0 +1,30 @@
+@use './../abtracts'as *;
+
+.massiveAdjust{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 100%;
+    padding: 35px 25px;
+    width: 100%;
+    &__selectFile{
+        height: 100%;
+        grid-template-rows: 50% 50%;
+        & h4{
+            margin-left: 10px;
+            text-align: left;
+            width: 100%;
+        }
+        &__buttons{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+        }
+    }
+    &__download{
+        margin-right: auto;
+        margin-top: 20px;
+    }
+}

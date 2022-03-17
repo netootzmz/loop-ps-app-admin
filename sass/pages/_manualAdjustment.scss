@@ -1,0 +1,11 @@
+@use './../abtracts'as *;
+
+.manualAdjustment{
+    display: grid;    
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    padding: 35px 25px;
+    width: 100%;
+}

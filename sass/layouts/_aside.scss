@@ -1,0 +1,15 @@
+@use './../abtracts'as *;
+
+.aside {
+  grid-row      : 1 / -1;
+  display       : flex;
+  flex-direction: column;
+  background    : $color-primary;
+  z-index       : 100;
+
+  &__nav {
+    margin-top    : 1.5rem;
+    display       : flex;
+    flex-direction: column;
+  }
+}

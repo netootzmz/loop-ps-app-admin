@@ -1,0 +1,35 @@
+@use './../abtracts'as *;
+
+.side-menu {
+  display       : flex;
+  flex-direction: column;
+  padding       : 3rem 0;
+  background    : $color-white;
+
+  &>h4 {
+    letter-spacing: normal;
+    padding-left  : 3rem;
+    margin-bottom : 1rem;
+    margin-right  : 1.5rem;
+  }
+
+  &__container {
+    display              : grid;
+    grid-template-columns: minmax(max-content, 18%) 1fr;
+    height               : 100%;
+
+    @include respond (big-desktop) {
+      grid-template-columns: 13% 1fr;
+    }
+
+    @include respond (tab-land) {
+      grid-template-columns: 22% 1fr;
+    }
+
+    @include respond (tab-port) {
+      grid-template-columns: 25% 1fr;
+    }
+
+
+  }
+}

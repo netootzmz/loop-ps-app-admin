@@ -1,0 +1,286 @@
+@use "./../abtracts" as *;
+
+.mailpayment {
+  &__row {
+    width: 85%;
+    &_title {
+      display: flex;
+      justify-content: space-between;
+      width: 85%;
+    }
+    &_half {
+      width: 47%;
+    }
+  }
+  &__bussiness {
+    margin-top: 20px;
+    width: 85%;
+    & p {
+      color: $color-primary;
+      font-size: 12px;
+    }
+    &__address {
+      font-size: 9px !important;
+    }
+  }
+  &__ticket {
+    &__resume {
+      border: 1px solid $color-primary;
+      border-radius: 20px;
+      margin-top: 10px;
+      padding: 10px;
+      width: 90%;
+      & p {
+        color: $color-primary;
+        font-size: 12px;
+        font-weight: 400;
+      }
+      &__total {
+        font-size: 14px !important;
+        font-weight: 600 !important;
+      }
+    }
+    &__head {
+      font-size: 10px;
+      margin-top: 10px;
+    }
+  }
+  &__title {
+    font-size: 16px;
+    width: 85%;
+    &_text {
+      font-weight: 400;
+    }
+    &__head {
+      color: white;
+      font-weight: 400;
+    }
+    &__lineOne {
+      color: $color-primary;
+      font-size: 12px;
+      margin: 5px;
+      text-align: center;
+      width: 200px;
+    }
+    &__principal {
+      justify-content: center;
+      text-align: center;
+    }
+  }
+
+  &__headText {
+    margin-top: 6%;
+    & h4 {
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  &__container {
+    border-radius: 0;
+    padding-bottom: 0;
+    position: relative;
+    width: 100%;
+  }
+  &__card {
+    border-radius: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+  }
+  &__header {
+    background-color: $color-primary;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    &_text {
+      align-items: center;
+      display: flex;
+      margin-top: 15px;
+      width: 98%;
+    }
+    &__head {
+      height: 50px;
+      padding: 10px;
+    }
+  }
+  &__footer {
+    align-items: center;
+    background-color: $color-primary;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    height: 120px;
+    width: 104.5%;
+    &__image {
+      height: 80px;
+      position: relative;
+      width: 160px;
+    }
+  }
+  &__smartlogo {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    width: 120px;
+  }
+  &__logoTicket {
+    align-items: center;
+    display: flex;
+    height: 80px;
+    width: 110px;
+  }
+  &__datosnegocio {
+    margin-top: 24px;
+    & p {
+      color: $color-primary;
+      text-align: center;
+    }
+  }
+  &__greetings {
+    margin-top: 15px;
+    & h2 {
+      text-align: center;
+    }
+  }
+  &__image {
+    position: relative;
+    width: 100%;
+    & > div {
+      height: 10px;
+      inset: unset !important;
+      width: 220px;
+    }
+    &__superior {
+      margin-left: -20px;
+      & > div {
+        left: 0 !important;
+      }
+    }
+    &__inferior {
+      margin-top: 20px;
+      margin-right: -20px;
+      & > div {
+        right: 0 !important;
+      }
+    }
+  }
+  &__detail {
+    align-items: center;
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    width: 95%;
+    &__space {
+      justify-content: space-between;
+    }
+    &__titles {
+      & p {
+        color: $color-primary;
+        font-size: 12px;
+        font-weight: 200;
+        text-align: right;
+      }
+    }
+    &__line {
+      background-color: $color-primary;
+      border-radius: 5px;
+      margin: 0 25px;
+      height: 90px;
+      width: 2px;
+    }
+    &__text {
+      & p {
+        color: $color-primary;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: left;
+      }
+    }
+    &__charge {
+      & p {
+        color: $color-primary;
+        font-size: 12px;
+        font-weight: 600;
+        text-align: left;
+      }
+    }
+    &__resume {
+      & p {
+        color: $color-primary;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: right;
+      }
+    }
+  }
+  &__smartLegend {
+    color: $color-secondary;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+  }
+  &__legalText {
+    color: $color-primary;
+    font-size: 8px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 90%;
+  }
+  &__dopayment {
+    align-items: center;
+    color: white;
+    background-color: $color-secondary;
+    border-radius: 20px;
+    box-shadow: 0px 2px 6px 2px rgb(0 0 0 / 20%);
+    display: flex;
+    font-size: 14px;
+    height: 32px;
+    justify-content: center;
+    margin-top: 24px;
+    text-align: center;
+    width: 160px;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+    width: 100%;
+  }
+  &__disclaimer {
+    margin-top: 10%;
+    width: 300px;
+    & p {
+      color: $color-primary;
+      font-size: 10px;
+      font-weight: 400;
+      text-align: center;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+  }
+  &__contact {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  &__notRecognizecharge {
+    color: $color-primary;
+    font-weight: 400;
+    font-size: 10px;
+    margin-top: 20px;
+    overflow-wrap: break-word;
+    text-align: center;
+    max-width: 300px;
+    word-wrap: break-word;
+  }
+  &__endBody {
+    overflow: hidden;
+    padding: 2px 5px;
+    width: 350px;
+    word-wrap: break-word;
+  }
+}

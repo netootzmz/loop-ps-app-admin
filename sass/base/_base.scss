@@ -1,0 +1,49 @@
+@use './../abtracts'as *;
+
+*,
+*::after,
+*::before {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background: $color-grey-light;
+  width     : 100vw;
+  height    : 100vh;
+  overflow  : hidden;
+}
+
+::selection {
+  background-color: $color-primary;
+  color           : $color-grey-light;
+}
+
+#__next {
+  display              : grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows   : min-content 1fr;
+  height               : 100vh;
+  width                : 100vw;
+}
+
+.main {
+  height     : 100%;
+  grid-column: 2/3;
+  grid-row   : 2/3;
+  overflow-y : auto;
+}

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test in <Input/> Should render Input 1`] = `
+<div
+  className="input__group   "
+>
+  <div
+    className="input__container  input__container--disabled "
+  >
+    <div
+      className="input__wrapper"
+    >
+      <input
+        autoComplete="nope"
+        className="input"
+        disabled={true}
+        type=""
+      />
+      <label
+        className="input__label  input__label--disabled"
+      />
+    </div>
+  </div>
+</div>
+`;

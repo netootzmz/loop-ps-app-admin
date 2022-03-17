@@ -1,0 +1,95 @@
+const errorsMessages = (message: string, code?: string) => {
+  enum errList {
+    "Información procesada correctamente",
+    "Sin resgistros para mostrar",
+    "Existe una variable parametrizado con los mismos datos",
+    "No existe el registro en DB",
+    "Parámetros incompletos",
+    "Dato no válido",
+    "Error al eliminar registro",
+    "Ocurrio un error en el sistema",
+    "Rol asociado a un usuario",
+    "Imposible realizar la edición",
+    "El nombre de usuario  o correo electrónico no se encuentra registrado en base de datos",
+    "No se encuentra activo",
+    "Código de verificación erroneo",
+    "Código de verificación vencido por tiempo",
+    "El tiempo valido de la liga ha vencido",
+    "El folio tiene un status 2",
+    "Error general",
+    "No se pudo completar la operación favor de reintentar",
+    "Error en el formato de validez de la tarjeta",
+    "Error el parametro de entrada no es un email",
+    "Error al generar llave",
+    "Error al recuperar datos de envio",
+    "ERROR DE CONEXION CON EL SERVICIO",
+    "NO EXISTE TRANSACCION",
+    "ERROR_CODE_DOCUMENTO_NO_EXISTE_EN_BD",
+    "SERVICIO NO PUDO RESPONDER",
+    "No existe el commercial business ingresado",
+    "no existe el type service ingresado",
+    "No existe core billing",
+    "no existe core sale doscount rate",
+    "No existe el core solution ingresado",
+    "no existe el core fee period",
+    "Error ingresar el parametro cost",
+    "El dato ingresado no es un email",
+    "Las datos ingresados ni tienen el formato aaaa-mm-dd",
+    "El password ingresado no es valido",
+    "El cliente no tiene los permisos suficientes para obtener una liga de pago",
+    "Error al generar  sub afiliacion del cliente",
+    "Error el cliente ya cuenta con una sub afiliacion",
+    "Error  type message catalog no existe",
+    "Error Acquire catalog no existe",
+    "Error Emisor catalog no existe",
+    "Error affectation catalog no existe",
+    "Error status alert no existe",
+    "Error el debito y  credito fuera de rango",
+    "Error el cliente ya cuenta con una sobreescritura de ranngo",
+    "Error empesa no encontrada",
+    "Error al  gernerar afiliacion",
+    "Error no cuenta con los permisos para esta tarea",
+    "Error desconocido, contacta una administrador",
+    "No existe documento para la configuración solicitada",
+    "El usuario no esta registrado",
+    "Error de comunicacion con BANXICO",
+    "Credenciales Invalidas",
+    "Credenciales invalidas, vuelve a intentarlo",
+    "Usuario Bloqueado",
+    "Error al convertir Json",
+    "Error hay valores nulos",
+    "Error el Banco no existe",
+    "Error la nueva contraseña y la confirmacion no son iguales",
+    "El número de sucursal no existe en la BD",
+    "El cliente asociado no existe en la BD",
+    "El formato del nombre no es valido",
+    "La fecha esta fuera de rango",
+    "Error en la comunicacion con el servidor",
+    "Usuario No Autorizado",
+    "Error al Autorizar la cuota",
+    "Error  la solucion no puede ser rechazada",
+    "Ocurrio un problema al cargar el Layout, error en registros",
+    "El archivo no es un formato correcto",
+    "La sucursal no existe",
+    "Password usado previamente",
+    "La solucion no cuenta con meses sin intereses configurados",
+    "El password ingresado no coincide con el password actual",
+    "El correo Actual  y el correo nuevo no pueden ser iguales",
+    "Error usuario inactivo",
+    "Error desconocido" = 1000,
+  }
+
+  const key = parseInt(message) || parseInt(code!);
+  
+  if(message==='0'){
+    return errList[0]
+  }
+
+  return typeof key === "number" && !isNaN(key)
+    ? errList[key]
+    : "Ocurrió un error inesperado...";
+};
+
+errorsMessages("1");
+
+export default errorsMessages;

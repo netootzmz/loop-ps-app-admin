@@ -1,0 +1,64 @@
+@use './../abtracts'as *;
+
+.p-validation {
+  display: flex;
+  width  : 100%;
+
+  &__pill {
+    background   : $color-grey-dark;
+    flex-basis   : 50%;
+    margin       : .5rem;
+    border-radius: 5000px;
+    line-height  : 1.3;
+
+
+    @include respond (tab-land) {
+      flex-basis: 30%;
+    }
+
+
+    &--danger {
+      background: $color-error;
+    }
+
+    &--warning {
+      background: rgb(255, 183, 0);
+    }
+
+    &--secondary {
+      background: $color-secondary;
+    }
+
+    &--success {
+      background: $color-success;
+    }
+  }
+
+  &__text {
+    flex-basis     : 100%;
+    display        : flex;
+    height         : 100%;
+    align-items    : center;
+    width          : fit-content;
+    justify-content: center;
+    font-weight    : 600;
+    font-size      : 1.2rem;
+    text-shadow    : 0px 1px 2px rgba(#000, .2);
+
+    &--danger {
+      color: $color-error;
+    }
+
+    &--warning {
+      color: rgb(255, 183, 0);
+    }
+
+    &--secondary {
+      color: $color-secondary;
+    }
+
+    &--success {
+      color: $color-success;
+    }
+  }
+}
